@@ -63,6 +63,7 @@ class SimpleWikiEntry(Base):
     id: Mapped[int] = mapped_column(primary_key=True)
     title: Mapped[str]
     text: Mapped[str]
+    text_clean: Mapped[Optional[str]]
 
 
 Base.metadata.create_all(engine)
