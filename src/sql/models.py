@@ -46,4 +46,23 @@ class ClearCorpusEntry(Base):
     cml2ri: Mapped[Optional[float]]
 
 
+class DatasetEntry(Base):
+    __tablename__ = "dataset"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    model: Mapped[str]
+    level: Mapped[str]
+    topic: Mapped[str]
+    text: Mapped[str]
+    prompt: Mapped[str]
+
+
+class SimpleWikiEntry(Base):
+    __tablename__ = "simple_wiki"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    title: Mapped[str]
+    text: Mapped[str]
+
+
 Base.metadata.create_all(engine)

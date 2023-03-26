@@ -3,7 +3,7 @@ import requests
 import dpath
 
 from ..util import dget
-from ..constants import OPEANAI_API_KEY
+from ..constants import OPEANAI_API_KEY, OPENAI_MODEL
 
 
 class GPT3():
@@ -34,14 +34,13 @@ class GPT3():
     def complete(
         self,
         prompt,
-        model: str = "text-davinci-003",
         max_tokens: int = 3000,
         temperature: float = 0.9,
         top_p: float = 1,
         n: int = 1
     ):
         body = {
-            "model": model,
+            "model": OPENAI_MODEL,
             "prompt": prompt,
             "max_tokens": max_tokens,
             "temperature": temperature,
