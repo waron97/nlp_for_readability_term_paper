@@ -1,12 +1,14 @@
 import json
-import os
-
 import requests
+import dpath
+
+from ..util import dget
+from ..constants import OPEANAI_API_KEY
 
 
 class GPT3():
     def __init__(self) -> None:
-        self.token = os.environ.get('OPENAI_API_KEY')
+        self.token = OPEANAI_API_KEY
         self._base_url = "https://api.openai.com/v1"
 
     def __make_request(self, body={}, endpoint: str = "", method: str = "GET"):
@@ -22,7 +24,8 @@ class GPT3():
             data=b if method == "POST" else None
         ).content
 
-        return json.loads(response)
+        loaded = json.loads(response)
+        return dget(loaded, "choices/0/text")
 
     def list_models(self):
         response = self.__make_request(endpoint="models")

@@ -114,6 +114,18 @@ files = [
 ]
 
 [[package]]
+name = "dpath"
+version = "2.1.5"
+description = "Filesystem-like pathing and searching for dictionaries"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "dpath-2.1.5-py3-none-any.whl", hash = "sha256:559edcbfc806ca2f9ad9e63566f22e5d41c000e4215bbce9dbf1ca4c859f5e0b"},
+    {file = "dpath-2.1.5.tar.gz", hash = "sha256:ccd964db839baad4aa820612b4b8731b09f40a245d401b723156ce4ef45b22b7"},
+]
+
+[[package]]
 name = "duckdb"
 version = "0.7.1"
 description = "DuckDB embedded database"
@@ -654,4 +666,4 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "7ffe72e798270e8fa1430bf9699e0eccc240e4b273da3843cb83ca3639235d9a"
+content-hash = "3131024e6021e54c44d692cfcb2501f8e143aec4d7078c7fb54bc0944ce25ec6"
