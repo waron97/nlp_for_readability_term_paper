@@ -1,0 +1,122 @@
+\pdfoutput=1
+
+\documentclass[11pt]{article}
+
+\usepackage[]{acl}
+\usepackage{tabularx}
+
+\usepackage{times}
+\usepackage{latexsym}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{microtype}
+
+\title{Cross-linguistic complexity analysis using UD treebanks}
+
+\author{Aron Winkler \\
+  University of Tübungen \\
+  \texttt{email@domain}}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+    The aim of this project is to explore the use of UD treebanks in cross-linguistic complexity research. While it is not this paper's objective to make strong theoretical claims on complexity in its own right, it examines complexity measures computed on various UD treebanks across 4 languages. This work focuses on treebanks for English, German, Hungarian, and Chinese, in an attempt to determine whether complexity measures stay consistent within treebanks for the same language, and whether some languages consistently show higher complexity than others.
+    These claims are verified with official UD corpora, as well as with a parallel corpus of 50 sentences for each language mentioned above.
+\end{abstract}
+
+\section{Introduction}
+
+What constitutes linguistic complexity is an elusive multi-faceted inquiry, and quantifying it is equally challenging. Previous approaches have included text-based metrics as well as eye-tracking studies (e.g. \citealp{Lee:2007}), but a general consensus has not been reached, especially when it comes to the notion of "overall complexity" of a language. In the case that an experiment produces numeric values as a proxy for complexity, it is not obvious that results computed on two different languages are comparable.
+
+In this work, the objective is not to attempt to resolve these foundational question about linguistic complexity, but rather to accept that there are certain well documented text-based proxies for computing it - such as lexical, morphological, and syntactic complexity measures - and to explore how the Universal Dependencies framework can be employed to further the subject matter. 
+
+Indeed, the potential of UD-annotated data appears to be largely untapped in linguistic complexity research. A convincing contribution to this field was made by \citealp{berdicevskis-etal-2018-using}, estimating robustness of complexity values computed on a variety of treebanks, while accounting for additional obstacles such as language-specific annotation conventions that might reduce comparability.
+
+While this project is more restricted in scope and claims, the goal is to showcase the use of UD treebanks in linguistic complexity research along the same lines as \citealp{berdicevskis-etal-2018-using}. For this purpose, a variety of treebanks across four languages were used, in combination with a set of text-based complexity metrics inspired in part by readability research, and in part by complexity research more broadly. These metrics are computed on two datasets, one of which is a collection of official UD treebanks, and the other being a small in-house parallel corpus comprising 50 sentences of each of the 4 target languages.
+
+\section{Dataset and metrics}
+
+\subsection{Dataset}
+
+
+\input{tables/webdata.tex}
+
+Table~\ref{tab:webdata} shows the list of UD web treebanks used in this experiment. For the English language, which has many treebanks available to it, the Atis treebank (Github\footnote{\url{https://github.com/UniversalDependencies/UD_English-Atis}}), the gum GUM (\citealp{berzak2016tle}, GitHub\footnote{\url{https://github.com/UniversalDependencies/UD_English-GUM}}), and the EWT treebank (\citealp{silveira14gold}, GitHub\footnote{\url{https://github.com/UniversalDependencies/UD_English-EWT}}) were ised. For German, this work employs GSD (\citealp{mcdonald-etal-2013-universal}, GitHub \footnote{\url{https://github.com/UniversalDependencies/UD_German-GSD}}) and HDT (\citealp{borges-volker-etal-2019-hdt}, \citealp{hennig-kohn-2017-dependency}, \citealp{hdtextra}, \citealp{hdtguide}, GitHub \footnote{\url{https://github.com/UniversalDependencies/UD_German-HDT}}). For Chinese, 
+GSD (GitHub\footnote{\url{https://github.com/UniversalDependencies/UD_Chinese-GSD}}) and PUD (GitHub\footnote{\url{https://github.com/UniversalDependencies/UD_Chinese-PUD}}) were the final choice. For Hungarian, only the Szeged treebank (\citealp{szeged}, Github\footnote{\url{https://github.com/UniversalDependencies/UD_Hungarian-Szeged}}) was available - therefore in order to have at least two treebanks for each language, the sentences annotated in the Szeged treebank were randomly distributed across two new treebanks (hun\_szeged\_1, hun\_szeged\_2).
+
+An additional parallel treebank\footnote{\url{https://github.com/iscl-dtdp/ParallelTreebank-FinalProject}} made by Nino Meisinger, Qin Gu, Lisa Wang, and Aron Winkler as coursework at the University of Tübingen was also employed. Although its limited size of only 50 sentences per language prevents meaningful conclusions from being drawn from measurements computed on it, its parallel nature nevertheless allows interesting observations to be made in reference to the complexity metric values obtained from the official treebanks. Sentences for this parallel treebank were sourced from Tatoeba\footnote{\url{https://tatoeba.org/en/}}, more specifically by selecting the 50 longest sentences that had translations for all 4 target languages. If more than one translation was available for any given language, then the choice was left up to the annotator. The final treebank was then manually annotated according to UD standards by annotators native or very proficient in the target language.
+
+\subsection{Metrics}
+
+\input{tables/metrics.tex}
+
+Table~\ref{tab:metrics} details the complexity metrics used in this experiment. Most of them were inspired by readability research, while a couple were adopted from \citep{berdicevskis-etal-2018-using}. Sentence-level metrics (labelled as "sentence" in the "Level" column in the table) were computed at the sentence level, then averaged for the treebank. Treebank-level metrics (labelled as "treebank" in the "Level" column in the table), were calculated regardless of sentence boundaries.
+
+A balance between morphological metrics (e.g. number of word forms per lemma) and syntactic metrics (e.g. number of clauses per sentence) was one of the objectives of this selection. A number of primitive lexical complexity metrics (e.g. type token ratio, token count) were also included. In this sense, noun to verb ratio is commonly used in readability research, as a preponderance of verbs signals more complex sentence. A similar case can be made for the number of clauses per sentence, as a sentence with many subordinate clauses will be naturally harder to process than a singular main clause.
+
+We discuss also a pair of metrics not commonly seen in research and only enabled by the presence of dependency annotation, namely number of \emph{ccomp} and \emph{xcomp} relations in a sentence respectively. The intuition behind these metrics is that processing \emph{ccomp} as opposed to \emph{xcomp} relations would entail a lower cognitive load. Thus, a higher usage of \emph{xcomp} might suggest higher overall complexity. Length of longest dependecy link is likewise enabled by the nature of the annotation, and gives an idea of how close related elements are on the surface level - academic Hungarian, as an example, tends do displace items across long sequences of clauses, often separating elements of the main clause by multiple lines of text.
+
+Although there are more sophisticated metrics on the market, this set was ultimately selected for ease of calculation and because their interpretation is generally approachable without further analytics, which woudln't necesserily be the case for more nuanced strategies.
+
+
+\section{Results}
+
+\subsection{Official treebanks}
+
+\input{tables/results.tex}
+
+Table~\ref{tab:results} shows the values related to each metric and each treebank, with the top 3 values highlighted for each metric. For the \emph{cmn\_pud} treebank, \emph{wfpl} is not reported, as this treebank does not include lemma information.
+
+Similary to \citep{berdicevskis-etal-2018-using}, multiple treebanks were used for each language to get a sense of metric robustness, i.e. whether the metric returns consistent results for different data in the same language. Most metrics are well-behaved in this sense, with \emph{en\_atis} being the biggest outlier across the board. The values from this treebank differ substantially from \emph{en\_gum} and \emph{en\_ewt} in most metrics. One possible justification for this outcome is the nature of how the data was sourced for \emph{en\_atis}, namely by collecting and transcribing user interactions with automated inquiry systems related to flight information. 
+
+Outside of this case, most metrics yield comparable outputs for most language treebank sets, a somewhat unexpected outcome in reference to the forecasted effect of at times wildly different treebank sizes. The biggest difference was measured between the two German treebanks, \emph{de\_gsd} and \emph{de\_hdt}, with the latter being over five times larger than the former. Despite this difference, outputs for the two treebanks are similar for all metrics except \emph{wfpl} and \emph{vps}, which were already projected to suffer most from the effect of treebank size (more sentences represent more opportunities for rarer POS tag sequences and lemma forms to appear).
+
+For the robustness aspect, it should be noted that the two treebanks for Hungarian score very similarly across the board, however this is a somewhat unremarkable outcome. The two treebanks were in fact derived from splitting a single original one in half, therefore they are smaller than all other treebanks in the experiment, and, unlike those other treebanks, have the same source. Conclusions derived from this observation are therefore necessarily weaker than those drawn from, for example, the two German treebanks.
+
+When it comes to the specific outputs generated during the experiment, it is generally the case that Hungarian and Chinese treebanks yield values that suggest a higher degree of overall complexity. All metrics except \emph{ttr} (type token ratio), \emph{wfpl} (word forms per lemma) and \emph{vps} (variability of 3 POS tag sequences) show at least either language in the top ranks. Notably, two of these metrics - \emph{wfpl} and \emph{vps} - were projected to be most affected by treebank size, and Hungarian and Chinese have the smallest treebanks in this project's dataset. It should also not go without mention that there is a relation between \emph{tc} and \emph{ttr}: \emph{tc} values are highest for exactly the 4 Hungarian and Chinese treebanks, thus partially explaining the lower expression of \emph{ttr}.
+
+For the metric "ratio of verbs with explicit subject", two variants were reported - \emph{ves} and \emph{ves\_t}, the former computed at the sentence level and the latter at the treebank level. This decision was motivated by the presence of several nominal sentences in the treebanks, which made this metric unstable at the sentence level. Seeing the results, even though the numbers and rankings obtained differ, German and Hungarian are still the top languages. The fact that English (which usually requires verbal subjects to be present) has fewer explicit subjects on average than Hungarian (which doesn't) is an unexpected outcome. However, this might be caused by discrepancies in annotation conventions, and not necessarily a true difference between the languages.
+
+The metrics \emph{ccomp} (average number of ccomp relations per sentence) and \emph{xcomp} (average number of xcomp relations per sentence) were a somewhat novel selection in this experiment. An argument was made above that a usage of the xcomp dependency relation might suggest higher overall complexity. Althugh for both \emph{ccomp} and \emph{xcomp} English and Chinese were the highest values, the \emph{xcomp} metric is higher than \emph{ccomp} in all treebanks except \emph{cmn\_gsd}. In this sense \emph{cmn\_gsd} is the only instance of higher ccomp relation usage, suggesting Chinese to be the least complex language according to the presuppositions related to these metrics - but this case cannot be confidently made without more detailed analysis of how these relations function in the specific treebanks.
+
+\subsection{Parallel treebank}
+
+\input{tables/results_ours.tex}
+
+To corroborate the observations drawn from the offical UD treebanks, the same set of metrics were computed on the parallel corpus introduced above. Table~\ref{tab:results-ours} outlines the results of this second part.
+
+Hungarian and Chinese remain the holders of the highest values in 8 out of 12 (11 if we group \emph{ves} and \emph{ves\_t}), lending credence to the theory that these languages are more complex in relation to these metrics. 
+
+The metrics \emph{vps} and \emph{wfpl} were highlighted as affected by treebank size in the section above, therefore conferming them on same-size treebanks, however small, might still be a valuable undertaking. Indeed, Hungarian, a language with complex morphology, takes the lead in \emph{wfpl} and Chinese outranks German and English, which have a more constrained word order. 
+
+Generally, while the results on the parallel treebank are more or less in line with the official treebanks, the sample size in this case is too small. Thus, meaningful conclusions cannot be drawn. Nevertheless the goal was to highlight the usage of parallel treebanks as a strategy to control for as many factors as possible and isolate aspects related to complexity.
+
+\section{Discussion and future research}
+
+This project attempted to showcase the use of treebanks in the UD framework for complexity research. To achieve this, a set of treebanks across four languages and a set of text-level metrics related to complexity were selected. The previous sections detailed the results of the experiment.
+
+As mentioned before, not all treebanks are created equal. In the case of this experiment, it was both the case that the treebank had different sizes, and that it is not a guarantee that annotation conventions across language frameworks are harmonic by default. \citep{berdicevskis-etal-2018-using}, a study similar to this work, took into account this latter obstacle by smoothing the inter-language annotation differences, while the current work took no such approaches. An idea for future work on the topic might be to look at [AUX + VERB + (N/C)SUBJ] structures in relation to the \emph{ves} metric, as the subject can be confusingly attached to either VERB or AUX.
+
+\citep{berdicevskis-etal-2018-using} employed a variety of nuanced metrics, which were certainly better suited to the task of gauging language complexity. Although the selection of metrics here can be defended in terms of interpretability and low hardware requirements, future work on the topic should err toward the side of significance rather than interpretability.
+
+On the topic of significance, statistical tests are absent from this experiment, although the results obtained would have benefitted from them. Breaking academic formality for this sentence, I will do my best to learn how to perform them for my future projects. 
+
+While no claims are made with regard to overall language complexity or even treebank complexity, perhaps this work eases the way to future experimentation with UD treebanks and the general field of language complexity.
+
+\section*{Acknowledgements}
+
+I thank Dr. Çağrı Çöltekin for his patient counselling and for providing insight into his 2018 paper, which served as inspiration for most of this work.
+
+\bibliography{anthology,cited}
+
+\appendix
+
+\section*{Resources}
+
+\label{sec:appendix}
+
+All code for this paper is available at \url{https://github.com/waron97/dtdp-final-paper}.
+
+\end{document}

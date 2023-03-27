@@ -1,0 +1,7 @@
+{
+  "[latex]": {
+    "editor.formatOnSave": false
+  },
+  "latex-workshop.linting.chktex.enabled": false,
+  "latex-workshop.linting.lacheck.enabled": false
+}
