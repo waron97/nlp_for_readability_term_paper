@@ -46,6 +46,15 @@ class ClearCorpusEntry(Base):
     cml2ri: Mapped[Optional[float]]
 
 
+class WikiArticle(Base):
+    __tablename__ = "wiki_article"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    title: Mapped[str]
+    standard_text: Mapped[str]
+    simple_text: Mapped[str]
+
+
 class DatasetEntry(Base):
     __tablename__ = "dataset"
 
