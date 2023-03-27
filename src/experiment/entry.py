@@ -5,6 +5,8 @@ from ..type import Dependencies
 
 class Entry(TypedDict):
     id: str
+    level: str
+    topic: str
     text: str
     pos: POS_TAGS
     parse: List[Dependencies]

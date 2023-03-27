@@ -6,18 +6,22 @@ from .metrics import Metric
 from ..type import Dependencies
 from tqdm import tqdm
 import pickle
+import re
 
 
 class Dataset:
     def __init__(self) -> None:
         self.data: List[Entry] = []
 
-    def add_sent(self, id: str, text: str):
+    def add_sent(self, id: str, text: str, level: str, topic: str):
         self.data.append({
             "id": id,
             "text": text,
             "pos": [],
-            "parse": []
+            "parse": [],
+            "level": level,
+            "topic": topic,
+            "tree_height": 0
         })
 
 
@@ -25,6 +29,8 @@ class Result(TypedDict):
     id: str
     metric: str
     value: float
+    level: str
+    topic: str
 
 
 class ResultSet:
@@ -40,12 +46,26 @@ class ResultSet:
     def all(self):
         return self.results
 
-    def filter(self, ids: List[str], metrics: List[str]) -> List[Result]:
-        results: List[Result] = []
-        for result in self.results:
-            if result["id"] in ids or result["metric"] in metrics:
-                results.append(result)
-        return results
+    def filter(self, ids: List[str] = [], metrics: List[str] = [], idlike: str = "", topics: List[str] = [], levels: List[str] = []):
+        results: List[Result] = self.all()
+        if ids:
+            results = [result for result in results if result["id"] in ids]
+        if metrics:
+            results = [
+                result for result in results if result["metric"] in metrics]
+        if topics:
+            results = [
+                result for result in results if result["topic"] in topics]
+        if levels:
+            results = [
+                result for result in results if result["level"] in levels]
+        if idlike:
+            results = [result for result in results if idlike in result["id"]]
+        return ResultSet(results)
+
+    def mean(self, metric: str) -> float:
+        results = self.filter(metrics=[metric]).all()
+        return sum([result["value"] for result in results]) / len(results)
 
 
 class Experiment:
@@ -80,7 +100,10 @@ class Experiment:
                 results.append({
                     "id": entry["id"],
                     "metric": metric.name,
-                    "value": value})
+                    "value": value,
+                    "level": entry["level"],
+                    "topic": entry["topic"]
+                })
         self.results = ResultSet(results)
 
     def load_dataset_from_pkl(self, fpath: str):

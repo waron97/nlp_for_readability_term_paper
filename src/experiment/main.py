@@ -13,14 +13,14 @@ from .metrics import (AvgSentenceLength, ClausesPerSentence,
 def _make_dataset(testset: TestSet) -> Dataset:
     dataset = Dataset()
     for entry in testset["gpt_generation"]:
-        _id = f"{entry['topic']}-{entry['level']}"
-        dataset.add_sent(_id, entry["text"])
+        _id = f"{entry['level']}-{entry['topic']}"
+        dataset.add_sent(_id, entry["text"], entry["level"], entry["topic"])
     for entry in testset["wikipedia"]["simple"]:
         _id = f"wikisimple-{entry['topic']}"
-        dataset.add_sent(_id, entry["text"])
+        dataset.add_sent(_id, entry["text"], "wikisimple", entry["topic"])
     for entry in testset["wikipedia"]["standard"]:
         _id = f"wikistandard-{entry['topic']}"
-        dataset.add_sent(_id, entry["text"])
+        dataset.add_sent(_id, entry["text"], "wikistandard", entry["topic"])
     return dataset
 
 
@@ -55,3 +55,5 @@ def analyze_dataset():
 
     experiment.compute_metrics()
     dump_to_file(experiment.results.all(), "data/results.json")
+
+    return metrics, experiment
