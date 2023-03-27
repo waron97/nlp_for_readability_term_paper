@@ -8,3 +8,4 @@ class Entry(TypedDict):
     text: str
     pos: POS_TAGS
     parse: List[Dependencies]
+    tree_height: List[int]

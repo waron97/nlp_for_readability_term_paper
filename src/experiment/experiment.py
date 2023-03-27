@@ -66,8 +66,11 @@ class Experiment:
     def _parse(self):
         print("Parsing...")
         for i, entry in tqdm(enumerate(self.dataset.data), total=len(self.dataset.data)):
-            parse = parse_dependencies(entry["text"])
+            out = parse_dependencies(entry["text"])
+            parse = [i[0] for i in out]
+            height = [i[1] for i in out]
             self.dataset.data[i]["parse"] = parse
+            self.dataset.data[i]["tree_height"] = height
 
     def compute_metrics(self):
         results: List[Result] = []

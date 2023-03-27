@@ -50,3 +50,47 @@ class TypeTokenRatio(Metric):
         tokens = word_tokenize(entry["text"], language="english")
         types = set(tokens)
         return len(types) / len(tokens)
+
+
+class ClausesPerSentence(Metric):
+    name = "Clauses Per Sentence"
+
+    def compute(self, entry: Entry) -> float:
+        sentence_relations = entry["parse"]
+        clause_relations = ["root", "ccomp",
+                            "xcomp", "advcl", "acl", "acl:relcl"]
+
+        n_clauses = 0
+        for sent in sentence_relations:
+            for row in sent.rows:
+                if row["rel"].lower() in clause_relations:
+                    n_clauses += 1
+
+        return n_clauses / len(sentence_relations)
+
+
+class LengthLongestDependencyLink(Metric):
+    name = "Length of Longest Dependency Link"
+
+    def compute(self, entry: Entry) -> float:
+        sentence_relations = entry["parse"]
+        exclude = ["punct"]
+        values = []
+        for sent in sentence_relations:
+            longest = 0
+            for row in sent.rows:
+                idx = int(row["id"])
+                head = int(row["head"])
+                distance = abs(idx - head)
+                if distance > longest and row["rel"] not in exclude:
+                    longest = distance
+            values.append(longest)
+        return sum(values) / len(sentence_relations)
+
+
+class ParseTreeDepth(Metric):
+    name = "Parse Tree Depth"
+
+    def compute(self, entry: Entry) -> float:
+        values = entry["tree_height"]
+        return sum(values) / len(values)

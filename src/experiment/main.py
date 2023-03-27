@@ -5,7 +5,9 @@ from typing import List
 from ..type import TestSet
 from ..util import dump_pickle, dump_to_file, load_pickle, parse_dependencies
 from .experiment import Dataset, Experiment
-from .metrics import AvgSentenceLength, Metric, NounToVerbRatio, TypeTokenRatio
+from .metrics import (AvgSentenceLength, ClausesPerSentence,
+                      LengthLongestDependencyLink, Metric, NounToVerbRatio,
+                      ParseTreeDepth, TypeTokenRatio)
 
 
 def _make_dataset(testset: TestSet) -> Dataset:
@@ -26,7 +28,10 @@ def _make_metrics() -> List[Metric]:
     return [
         AvgSentenceLength(),
         NounToVerbRatio(),
-        TypeTokenRatio()
+        TypeTokenRatio(),
+        ClausesPerSentence(),
+        LengthLongestDependencyLink(),
+        ParseTreeDepth()
     ]
 
 
@@ -46,5 +51,6 @@ def analyze_dataset():
     else:
         experiment = Experiment(dataset, metrics)
         experiment.dump_dataset_to_pkl(pickle_path)
+
     experiment.compute_metrics()
     dump_to_file(experiment.results.all(), "data/results.json")

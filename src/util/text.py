@@ -25,17 +25,18 @@ def pos_tag_text(text: str) -> POS_TAGS:
     return pos_tag_sents(sent_tokens, tagset="universal", lang="eng")
 
 
-def _parse_graph(graph: DependencyGraph) -> Dependencies:
+def _parse_graph(graph: DependencyGraph) -> Tuple[Dependencies, int]:
+    tree_height = graph.tree().height()
     conll = graph.to_conll(10).strip().split("\n")
     d = Dependencies()
     for line in conll:
         spl = line.split("\t")
         idx, word, lemma, pos, tag, _, head, rel, _, _ = spl
         d.add_row(idx, word, lemma, pos, tag, head, rel)
-    return d
+    return d, tree_height
 
 
-def parse_dependencies(text: str) -> List[Dependencies]:
+def parse_dependencies(text: str) -> List[Tuple[Dependencies, int]]:
     jar_path = os.path.join(
         os.getcwd(), "data", "stanford-corenlp-4.5.4", "stanford-corenlp-4.5.4.jar")
     models_path = os.path.join(
