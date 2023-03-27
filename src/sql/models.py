@@ -66,4 +66,13 @@ class SimpleWikiEntry(Base):
     text_clean: Mapped[Optional[str]]
 
 
+class DatasetWikiText(Base):
+    __tablename__ = "dataset_wiki_text"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    topic: Mapped[str]
+    simple: Mapped[str]
+    standard: Mapped[str]
+
+
 Base.metadata.create_all(engine)

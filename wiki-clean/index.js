@@ -1,34 +1,51 @@
-import sqlite3 from "sqlite3";
-import wtf from "wtf_wikipedia";
+import bodyParser from "body-parser";
+import cors from "cors";
+import express from "express";
 
-const clean = (wikitext) => {
-  return wtf(wikitext).text();
-};
+import clean from "./src/clean.js";
+import getNormalArticle from "./src/getArticle.js";
 
-const main = async () => {
-  const db = new sqlite3.Database("../data/data.db");
-  db.serialize(() => {
-    db.each("SELECT id, text, title FROM simple_wiki", (err, row) => {
-      const { id, text, title } = row;
-      let cleanText = "";
-      try {
-        cleanText = clean(text);
-      } catch {
-        console.log("[ERROR] " + title);
-      }
-      db.run(
-        "UPDATE simple_wiki SET text_clean = ? WHERE id = ?",
-        [cleanText, id],
-        (err) => {
-          if (err) {
-            console.log("[ERROR]", err);
-          } else {
-            console.log(`Updated ${title}`);
-          }
-        }
-      );
-    });
-  });
-};
+const app = express();
+app.use(bodyParser.json());
+app.use(cors());
 
-main();
+app.use((req, _, next) => {
+  console.log("Request: ", req.method, req.url, req.body);
+  next();
+});
+
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
+app.post("/clean", (req, res, next) => {
+  try {
+    const { text } = req.body;
+
+    const cleanText = clean(text);
+    res.json({ text: cleanText });
+  } catch (e) {
+    next(e);
+  }
+});
+
+app.post("/article", (req, res, next) => {
+  try {
+    const { title } = req.body;
+    console.log("title", title);
+    return getNormalArticle(title)
+      .then((text) => {
+        res.json({ text });
+      })
+      .catch((e) => {
+        next(e);
+      });
+  } catch (e) {
+    next(e);
+  }
+});
+
+const port = 6000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});

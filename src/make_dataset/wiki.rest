@@ -1,0 +1,16 @@
+
+@baseUrl = "http://localhost:6000"
+
+###
+
+GET http://localhost:6000 HTTP/1.1
+
+###
+
+
+POST http://localhost:6000/article HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "The great depression"
+}

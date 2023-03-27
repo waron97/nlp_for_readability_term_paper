@@ -9,7 +9,7 @@ load_dotenv()
 
 def main():
     # create_corpus_table()
-    load_simple_wiki_sql()
+    # load_simple_wiki_sql()
     make_dataset()
 
 
