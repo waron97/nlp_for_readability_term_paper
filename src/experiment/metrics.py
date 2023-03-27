@@ -1,9 +1,12 @@
+from string import punctuation
 from .entry import Entry
 from nltk.tokenize import sent_tokenize, word_tokenize
+import csv
 
 
 class Metric:
     name: str = "Metric"
+    abbreviation: str = "met"
     require_pos: bool = False
 
     def compute(self, entry: Entry) -> float:
@@ -12,6 +15,7 @@ class Metric:
 
 class AvgSentenceLength(Metric):
     name = "Average Sentence Length"
+    abbreviation = "ASL"
     require_pos = True
 
     def compute(self, entry: Entry) -> float:
@@ -23,6 +27,7 @@ class AvgSentenceLength(Metric):
 
 class NounToVerbRatio(Metric):
     name = "Noun to Verb Ratio"
+    abbreviation = "NVR"
     require_pos = True
 
     def compute(self, entry: Entry) -> float:
@@ -44,16 +49,18 @@ class NounToVerbRatio(Metric):
 
 class TypeTokenRatio(Metric):
     name = "Type Token Ratio"
+    abbreviation = "TTR"
     require_pos = False
 
     def compute(self, entry: Entry) -> float:
-        tokens = word_tokenize(entry["text"], language="english")
+        tokens = word_tokenize(entry["text"], language="english")[:100]
         types = set(tokens)
         return len(types) / len(tokens)
 
 
 class ClausesPerSentence(Metric):
     name = "Clauses Per Sentence"
+    abbreviation = "CPS"
 
     def compute(self, entry: Entry) -> float:
         sentence_relations = entry["parse"]
@@ -71,6 +78,7 @@ class ClausesPerSentence(Metric):
 
 class LengthLongestDependencyLink(Metric):
     name = "Length of Longest Dependency Link"
+    abbreviation = "LLDL"
 
     def compute(self, entry: Entry) -> float:
         sentence_relations = entry["parse"]
@@ -90,7 +98,35 @@ class LengthLongestDependencyLink(Metric):
 
 class ParseTreeDepth(Metric):
     name = "Parse Tree Depth"
+    abbreviation = "PTD"
 
     def compute(self, entry: Entry) -> float:
         values = entry["tree_height"]
         return sum(values) / len(values)
+
+
+class WordsInTop3000(Metric):
+    name = "Words in Top 3000"
+    abbreviation = "WIT"
+
+    def __init__(self) -> None:
+        p = "data/unigram_freq.csv"
+        self.top_3000 = set()
+        with open(p, "r") as f:
+            reader = csv.reader(f, delimiter=",")
+            next(reader)  # skip header
+            for _ in range(3000):
+                row = next(reader)
+                self.top_3000.add(row[0])
+
+    def compute(self, entry: Entry) -> float:
+        tokens = word_tokenize(entry["text"], language="english")
+        tokens = [token.lower() for token in tokens if token not in [
+            ",", ".", "?", "!", ":", ";"]]
+
+        in_top_3000 = 0
+        for token in tokens:
+            if token in self.top_3000:
+                in_top_3000 += 1
+
+        return in_top_3000 / len(tokens)

@@ -7,7 +7,7 @@ from ..util import dump_pickle, dump_to_file, load_pickle, parse_dependencies
 from .experiment import Dataset, Experiment
 from .metrics import (AvgSentenceLength, ClausesPerSentence,
                       LengthLongestDependencyLink, Metric, NounToVerbRatio,
-                      ParseTreeDepth, TypeTokenRatio)
+                      ParseTreeDepth, TypeTokenRatio, WordsInTop3000)
 
 
 def _make_dataset(testset: TestSet) -> Dataset:
@@ -31,7 +31,8 @@ def _make_metrics() -> List[Metric]:
         TypeTokenRatio(),
         ClausesPerSentence(),
         LengthLongestDependencyLink(),
-        ParseTreeDepth()
+        ParseTreeDepth(),
+        WordsInTop3000()
     ]
 
 
