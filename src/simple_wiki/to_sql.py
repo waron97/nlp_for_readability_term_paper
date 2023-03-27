@@ -1,4 +1,7 @@
+import json
 from xml.etree import ElementTree as ET
+
+import requests
 from ..sql import engine
 from ..sql.models import SimpleWikiEntry
 from tqdm import tqdm
@@ -11,11 +14,25 @@ def _exists(id):
         return session.query(SimpleWikiEntry).filter_by(id=id).first() is not None
 
 
-def _save_wiki(id, title, text, session: Session = None):
-    if not id or not title or not text:
+def _save_wiki(id, title, text, text_clean, session: Session = None):
+    if not id or not title or not text or not text_clean:
         return
-    entry = SimpleWikiEntry(id=id, title=title, text=text)
+    entry = SimpleWikiEntry(
+        id=id, title=title, text=text, text_clean=text_clean)
     session.add(entry)
+
+
+def get_clean_text(text):
+    try:
+        content = requests.post(
+            "http://localhost:6000/clean",
+            headers={"Content-Type": "application/json"},
+            data=json.dumps({"text": text})
+        ).content
+        l = json.loads(content)
+        return l["text"]
+    except:
+        return ""
 
 
 def load_simple_wiki_sql():
@@ -32,6 +49,7 @@ def load_simple_wiki_sql():
             id = page.find(id_tag).text
             title = page.find(title_tag).text
             text = page.find(text_tag).text
+            text_clean = get_clean_text(text)
             if not _exists(id):
-                _save_wiki(id, title, text, session=session)
+                _save_wiki(id, title, text, text_clean, session=session)
         session.commit()

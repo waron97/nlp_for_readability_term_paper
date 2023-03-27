@@ -6,11 +6,11 @@ import clean from "./src/clean.js";
 import getNormalArticle from "./src/getArticle.js";
 
 const app = express();
-app.use(bodyParser.json());
+app.use(bodyParser.json({ limit: "50mb" }));
 app.use(cors());
 
 app.use((req, _, next) => {
-  console.log("Request: ", req.method, req.url, req.body);
+  console.log("Request: ", req.method, req.url);
   next();
 });
 

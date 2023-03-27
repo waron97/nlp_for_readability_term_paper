@@ -103,7 +103,7 @@ def _save_generation(text, level, topic, prompt):
 def make_dataset():
     prompts = _create_prompts()
     gpt3 = GPT3()
-    for i, (prompt, level, topic, wiki_topic) in tqdm(enumerate(prompts)):
+    for i, (prompt, level, topic, wiki_topic) in tqdm(enumerate(prompts), total=len(prompts)):
         _create_wiki_record(wiki_topic)
         if _exists(level, topic):
             continue
