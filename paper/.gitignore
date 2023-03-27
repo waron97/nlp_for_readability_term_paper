@@ -9,5 +9,4 @@
 *.dvi
 *.ps
 *.latexmk
-*.bst
 *.synctex.gz
