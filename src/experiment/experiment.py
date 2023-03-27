@@ -51,7 +51,6 @@ class ResultSet:
 class Experiment:
     def __init__(self, dts: Dataset, metrics: List[Metric], preprocess: bool = True) -> None:
         self.dataset: Dataset = dts
-        print(len(self.dataset.data))
         self.metrics: List[Metric] = metrics
         self.results: ResultSet = ResultSet([])
         if preprocess:
