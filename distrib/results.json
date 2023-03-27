@@ -1,0 +1,2802 @@
+[
+  {
+    "id": "Color Blindness-A1",
+    "metric": "Average Sentence Length",
+    "value": 20.4
+  },
+  {
+    "id": "The Great Depression-A1",
+    "metric": "Average Sentence Length",
+    "value": 19.2
+  },
+  {
+    "id": "Butterflies-A1",
+    "metric": "Average Sentence Length",
+    "value": 8.8889
+  },
+  {
+    "id": "Dogs-A1",
+    "metric": "Average Sentence Length",
+    "value": 20.8
+  },
+  {
+    "id": "Semantics-A1",
+    "metric": "Average Sentence Length",
+    "value": 19.8333
+  },
+  {
+    "id": "The Internet-A1",
+    "metric": "Average Sentence Length",
+    "value": 20.6
+  },
+  {
+    "id": "The Moon-A1",
+    "metric": "Average Sentence Length",
+    "value": 19.6
+  },
+  {
+    "id": "Color Blindness-A2",
+    "metric": "Average Sentence Length",
+    "value": 22.0909
+  },
+  {
+    "id": "The Great Depression-A2",
+    "metric": "Average Sentence Length",
+    "value": 20.1429
+  },
+  {
+    "id": "Butterflies-A2",
+    "metric": "Average Sentence Length",
+    "value": 19.3
+  },
+  {
+    "id": "Dogs-A2",
+    "metric": "Average Sentence Length",
+    "value": 22.1818
+  },
+  {
+    "id": "Semantics-A2",
+    "metric": "Average Sentence Length",
+    "value": 22.625
+  },
+  {
+    "id": "The Internet-A2",
+    "metric": "Average Sentence Length",
+    "value": 22.2857
+  },
+  {
+    "id": "The Moon-A2",
+    "metric": "Average Sentence Length",
+    "value": 21.2
+  },
+  {
+    "id": "Color Blindness-B1",
+    "metric": "Average Sentence Length",
+    "value": 22.6667
+  },
+  {
+    "id": "The Great Depression-B1",
+    "metric": "Average Sentence Length",
+    "value": 19.25
+  },
+  {
+    "id": "Butterflies-B1",
+    "metric": "Average Sentence Length",
+    "value": 13.0714
+  },
+  {
+    "id": "Dogs-B1",
+    "metric": "Average Sentence Length",
+    "value": 15.0909
+  },
+  {
+    "id": "Semantics-B1",
+    "metric": "Average Sentence Length",
+    "value": 17.1667
+  },
+  {
+    "id": "The Internet-B1",
+    "metric": "Average Sentence Length",
+    "value": 26.2857
+  },
+  {
+    "id": "The Moon-B1",
+    "metric": "Average Sentence Length",
+    "value": 12.8889
+  },
+  {
+    "id": "Color Blindness-B2",
+    "metric": "Average Sentence Length",
+    "value": 21.6
+  },
+  {
+    "id": "The Great Depression-B2",
+    "metric": "Average Sentence Length",
+    "value": 20.0
+  },
+  {
+    "id": "Butterflies-B2",
+    "metric": "Average Sentence Length",
+    "value": 21.1111
+  },
+  {
+    "id": "Dogs-B2",
+    "metric": "Average Sentence Length",
+    "value": 18.5
+  },
+  {
+    "id": "Semantics-B2",
+    "metric": "Average Sentence Length",
+    "value": 21.125
+  },
+  {
+    "id": "The Internet-B2",
+    "metric": "Average Sentence Length",
+    "value": 18.6667
+  },
+  {
+    "id": "The Moon-B2",
+    "metric": "Average Sentence Length",
+    "value": 19.6154
+  },
+  {
+    "id": "Color Blindness-C1",
+    "metric": "Average Sentence Length",
+    "value": 19.9091
+  },
+  {
+    "id": "The Great Depression-C1",
+    "metric": "Average Sentence Length",
+    "value": 17.7778
+  },
+  {
+    "id": "Butterflies-C1",
+    "metric": "Average Sentence Length",
+    "value": 19.5455
+  },
+  {
+    "id": "Dogs-C1",
+    "metric": "Average Sentence Length",
+    "value": 20.1818
+  },
+  {
+    "id": "Semantics-C1",
+    "metric": "Average Sentence Length",
+    "value": 22.1667
+  },
+  {
+    "id": "The Internet-C1",
+    "metric": "Average Sentence Length",
+    "value": 21.6
+  },
+  {
+    "id": "The Moon-C1",
+    "metric": "Average Sentence Length",
+    "value": 21.375
+  },
+  {
+    "id": "Color Blindness-C2",
+    "metric": "Average Sentence Length",
+    "value": 19.5385
+  },
+  {
+    "id": "The Great Depression-C2",
+    "metric": "Average Sentence Length",
+    "value": 22.125
+  },
+  {
+    "id": "Butterflies-C2",
+    "metric": "Average Sentence Length",
+    "value": 23.4444
+  },
+  {
+    "id": "Dogs-C2",
+    "metric": "Average Sentence Length",
+    "value": 21.2727
+  },
+  {
+    "id": "Semantics-C2",
+    "metric": "Average Sentence Length",
+    "value": 21.6364
+  },
+  {
+    "id": "The Internet-C2",
+    "metric": "Average Sentence Length",
+    "value": 21.375
+  },
+  {
+    "id": "The Moon-C2",
+    "metric": "Average Sentence Length",
+    "value": 19.6154
+  },
+  {
+    "id": "Dinosaurs-A1",
+    "metric": "Average Sentence Length",
+    "value": 16.6667
+  },
+  {
+    "id": "Economics-A1",
+    "metric": "Average Sentence Length",
+    "value": 19.0
+  },
+  {
+    "id": "Quantum Mechanics-A1",
+    "metric": "Average Sentence Length",
+    "value": 20.4
+  },
+  {
+    "id": "Dinosaurs-A2",
+    "metric": "Average Sentence Length",
+    "value": 15.6364
+  },
+  {
+    "id": "Economics-A2",
+    "metric": "Average Sentence Length",
+    "value": 20.375
+  },
+  {
+    "id": "Quantum Mechanics-A2",
+    "metric": "Average Sentence Length",
+    "value": 21.3333
+  },
+  {
+    "id": "Dinosaurs-B1",
+    "metric": "Average Sentence Length",
+    "value": 17.8889
+  },
+  {
+    "id": "Economics-B1",
+    "metric": "Average Sentence Length",
+    "value": 25.3333
+  },
+  {
+    "id": "Quantum Mechanics-B1",
+    "metric": "Average Sentence Length",
+    "value": 21.6
+  },
+  {
+    "id": "Dinosaurs-B2",
+    "metric": "Average Sentence Length",
+    "value": 20.3
+  },
+  {
+    "id": "Economics-B2",
+    "metric": "Average Sentence Length",
+    "value": 21.8889
+  },
+  {
+    "id": "Quantum Mechanics-B2",
+    "metric": "Average Sentence Length",
+    "value": 24.8571
+  },
+  {
+    "id": "Dinosaurs-C1",
+    "metric": "Average Sentence Length",
+    "value": 21.5
+  },
+  {
+    "id": "Economics-C1",
+    "metric": "Average Sentence Length",
+    "value": 22.1429
+  },
+  {
+    "id": "Quantum Mechanics-C1",
+    "metric": "Average Sentence Length",
+    "value": 26.2
+  },
+  {
+    "id": "Dinosaurs-C2",
+    "metric": "Average Sentence Length",
+    "value": 22.3333
+  },
+  {
+    "id": "Economics-C2",
+    "metric": "Average Sentence Length",
+    "value": 24.8333
+  },
+  {
+    "id": "Quantum Mechanics-C2",
+    "metric": "Average Sentence Length",
+    "value": 23.2222
+  },
+  {
+    "id": "wikisimple-Color Blindness",
+    "metric": "Average Sentence Length",
+    "value": 16.3923
+  },
+  {
+    "id": "wikisimple-Great Depression",
+    "metric": "Average Sentence Length",
+    "value": 15.2444
+  },
+  {
+    "id": "wikisimple-Butterfly",
+    "metric": "Average Sentence Length",
+    "value": 12.8978
+  },
+  {
+    "id": "wikisimple-Dog",
+    "metric": "Average Sentence Length",
+    "value": 16.9242
+  },
+  {
+    "id": "wikisimple-Semantics",
+    "metric": "Average Sentence Length",
+    "value": 19.625
+  },
+  {
+    "id": "wikisimple-Internet",
+    "metric": "Average Sentence Length",
+    "value": 18.0
+  },
+  {
+    "id": "wikisimple-Moon",
+    "metric": "Average Sentence Length",
+    "value": 17.9104
+  },
+  {
+    "id": "wikisimple-Dinosaur",
+    "metric": "Average Sentence Length",
+    "value": 21.2667
+  },
+  {
+    "id": "wikisimple-Economics",
+    "metric": "Average Sentence Length",
+    "value": 19.7627
+  },
+  {
+    "id": "wikisimple-Quantum Mechanics",
+    "metric": "Average Sentence Length",
+    "value": 23.4297
+  },
+  {
+    "id": "wikistandard-Color Blindness",
+    "metric": "Average Sentence Length",
+    "value": 23.8693
+  },
+  {
+    "id": "wikistandard-Great Depression",
+    "metric": "Average Sentence Length",
+    "value": 24.991
+  },
+  {
+    "id": "wikistandard-Butterfly",
+    "metric": "Average Sentence Length",
+    "value": 22.4504
+  },
+  {
+    "id": "wikistandard-Dog",
+    "metric": "Average Sentence Length",
+    "value": 25.8094
+  },
+  {
+    "id": "wikistandard-Semantics",
+    "metric": "Average Sentence Length",
+    "value": 25.4091
+  },
+  {
+    "id": "wikistandard-Internet",
+    "metric": "Average Sentence Length",
+    "value": 27.2432
+  },
+  {
+    "id": "wikistandard-Moon",
+    "metric": "Average Sentence Length",
+    "value": 28.6908
+  },
+  {
+    "id": "wikistandard-Dinosaur",
+    "metric": "Average Sentence Length",
+    "value": 31.9462
+  },
+  {
+    "id": "wikistandard-Economics",
+    "metric": "Average Sentence Length",
+    "value": 27.1255
+  },
+  {
+    "id": "wikistandard-Quantum Mechanics",
+    "metric": "Average Sentence Length",
+    "value": 23.7768
+  },
+  {
+    "id": "Color Blindness-A1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.2381
+  },
+  {
+    "id": "The Great Depression-A1",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.0769
+  },
+  {
+    "id": "Butterflies-A1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.7692
+  },
+  {
+    "id": "Dogs-A1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.9375
+  },
+  {
+    "id": "Semantics-A1",
+    "metric": "Noun to Verb Ratio",
+    "value": 0.7333
+  },
+  {
+    "id": "The Internet-A1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.6111
+  },
+  {
+    "id": "The Moon-A1",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.4167
+  },
+  {
+    "id": "Color Blindness-A2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.5556
+  },
+  {
+    "id": "The Great Depression-A2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.8333
+  },
+  {
+    "id": "Butterflies-A2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.92
+  },
+  {
+    "id": "Dogs-A2",
+    "metric": "Noun to Verb Ratio",
+    "value": 0.9615
+  },
+  {
+    "id": "Semantics-A2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.0278
+  },
+  {
+    "id": "The Internet-A2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.0938
+  },
+  {
+    "id": "The Moon-A2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.6667
+  },
+  {
+    "id": "Color Blindness-B1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.4359
+  },
+  {
+    "id": "The Great Depression-B1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.56
+  },
+  {
+    "id": "Butterflies-B1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.2857
+  },
+  {
+    "id": "Dogs-B1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.5517
+  },
+  {
+    "id": "Semantics-B1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.1429
+  },
+  {
+    "id": "The Internet-B1",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.2308
+  },
+  {
+    "id": "The Moon-B1",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.0
+  },
+  {
+    "id": "Color Blindness-B2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.4103
+  },
+  {
+    "id": "The Great Depression-B2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.9302
+  },
+  {
+    "id": "Butterflies-B2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.4138
+  },
+  {
+    "id": "Dogs-B2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.4545
+  },
+  {
+    "id": "Semantics-B2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.1714
+  },
+  {
+    "id": "The Internet-B2",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.0
+  },
+  {
+    "id": "The Moon-B2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.6757
+  },
+  {
+    "id": "Color Blindness-C1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.5676
+  },
+  {
+    "id": "The Great Depression-C1",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.087
+  },
+  {
+    "id": "Butterflies-C1",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.1
+  },
+  {
+    "id": "Dogs-C1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.4054
+  },
+  {
+    "id": "Semantics-C1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.7391
+  },
+  {
+    "id": "The Internet-C1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.6452
+  },
+  {
+    "id": "The Moon-C1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.8636
+  },
+  {
+    "id": "Color Blindness-C2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.8372
+  },
+  {
+    "id": "The Great Depression-C2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.913
+  },
+  {
+    "id": "Butterflies-C2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.871
+  },
+  {
+    "id": "Dogs-C2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.2174
+  },
+  {
+    "id": "Semantics-C2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.4872
+  },
+  {
+    "id": "The Internet-C2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.5
+  },
+  {
+    "id": "The Moon-C2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.7568
+  },
+  {
+    "id": "Dinosaurs-A1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.2778
+  },
+  {
+    "id": "Economics-A1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.25
+  },
+  {
+    "id": "Quantum Mechanics-A1",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.5
+  },
+  {
+    "id": "Dinosaurs-A2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.7391
+  },
+  {
+    "id": "Economics-A2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.5714
+  },
+  {
+    "id": "Quantum Mechanics-A2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.4
+  },
+  {
+    "id": "Dinosaurs-B1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.1
+  },
+  {
+    "id": "Economics-B1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.0625
+  },
+  {
+    "id": "Quantum Mechanics-B1",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.6957
+  },
+  {
+    "id": "Dinosaurs-B2",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.25
+  },
+  {
+    "id": "Economics-B2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.75
+  },
+  {
+    "id": "Quantum Mechanics-B2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.88
+  },
+  {
+    "id": "Dinosaurs-C1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.4359
+  },
+  {
+    "id": "Economics-C1",
+    "metric": "Noun to Verb Ratio",
+    "value": 3.3333
+  },
+  {
+    "id": "Quantum Mechanics-C1",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.3061
+  },
+  {
+    "id": "Dinosaurs-C2",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.3333
+  },
+  {
+    "id": "Economics-C2",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.7059
+  },
+  {
+    "id": "Quantum Mechanics-C2",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.7419
+  },
+  {
+    "id": "wikisimple-Color Blindness",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.6022
+  },
+  {
+    "id": "wikisimple-Great Depression",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.8785
+  },
+  {
+    "id": "wikisimple-Butterfly",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.6992
+  },
+  {
+    "id": "wikisimple-Dog",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.6923
+  },
+  {
+    "id": "wikisimple-Semantics",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.3415
+  },
+  {
+    "id": "wikisimple-Internet",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.7379
+  },
+  {
+    "id": "wikisimple-Moon",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.7939
+  },
+  {
+    "id": "wikisimple-Dinosaur",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.5354
+  },
+  {
+    "id": "wikisimple-Economics",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.3669
+  },
+  {
+    "id": "wikisimple-Quantum Mechanics",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.5312
+  },
+  {
+    "id": "wikistandard-Color Blindness",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.9618
+  },
+  {
+    "id": "wikistandard-Great Depression",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.5999
+  },
+  {
+    "id": "wikistandard-Butterfly",
+    "metric": "Noun to Verb Ratio",
+    "value": 1.9051
+  },
+  {
+    "id": "wikistandard-Dog",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.2879
+  },
+  {
+    "id": "wikistandard-Semantics",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.4406
+  },
+  {
+    "id": "wikistandard-Internet",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.628
+  },
+  {
+    "id": "wikistandard-Moon",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.5507
+  },
+  {
+    "id": "wikistandard-Dinosaur",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.1922
+  },
+  {
+    "id": "wikistandard-Economics",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.3954
+  },
+  {
+    "id": "wikistandard-Quantum Mechanics",
+    "metric": "Noun to Verb Ratio",
+    "value": 2.4559
+  },
+  {
+    "id": "Color Blindness-A1",
+    "metric": "Type Token Ratio",
+    "value": 0.62
+  },
+  {
+    "id": "The Great Depression-A1",
+    "metric": "Type Token Ratio",
+    "value": 0.6562
+  },
+  {
+    "id": "Butterflies-A1",
+    "metric": "Type Token Ratio",
+    "value": 0.675
+  },
+  {
+    "id": "Dogs-A1",
+    "metric": "Type Token Ratio",
+    "value": 0.67
+  },
+  {
+    "id": "Semantics-A1",
+    "metric": "Type Token Ratio",
+    "value": 0.66
+  },
+  {
+    "id": "The Internet-A1",
+    "metric": "Type Token Ratio",
+    "value": 0.68
+  },
+  {
+    "id": "The Moon-A1",
+    "metric": "Type Token Ratio",
+    "value": 0.6429
+  },
+  {
+    "id": "Color Blindness-A2",
+    "metric": "Type Token Ratio",
+    "value": 0.62
+  },
+  {
+    "id": "The Great Depression-A2",
+    "metric": "Type Token Ratio",
+    "value": 0.65
+  },
+  {
+    "id": "Butterflies-A2",
+    "metric": "Type Token Ratio",
+    "value": 0.63
+  },
+  {
+    "id": "Dogs-A2",
+    "metric": "Type Token Ratio",
+    "value": 0.71
+  },
+  {
+    "id": "Semantics-A2",
+    "metric": "Type Token Ratio",
+    "value": 0.64
+  },
+  {
+    "id": "The Internet-A2",
+    "metric": "Type Token Ratio",
+    "value": 0.64
+  },
+  {
+    "id": "The Moon-A2",
+    "metric": "Type Token Ratio",
+    "value": 0.64
+  },
+  {
+    "id": "Color Blindness-B1",
+    "metric": "Type Token Ratio",
+    "value": 0.63
+  },
+  {
+    "id": "The Great Depression-B1",
+    "metric": "Type Token Ratio",
+    "value": 0.72
+  },
+  {
+    "id": "Butterflies-B1",
+    "metric": "Type Token Ratio",
+    "value": 0.64
+  },
+  {
+    "id": "Dogs-B1",
+    "metric": "Type Token Ratio",
+    "value": 0.74
+  },
+  {
+    "id": "Semantics-B1",
+    "metric": "Type Token Ratio",
+    "value": 0.57
+  },
+  {
+    "id": "The Internet-B1",
+    "metric": "Type Token Ratio",
+    "value": 0.67
+  },
+  {
+    "id": "The Moon-B1",
+    "metric": "Type Token Ratio",
+    "value": 0.59
+  },
+  {
+    "id": "Color Blindness-B2",
+    "metric": "Type Token Ratio",
+    "value": 0.63
+  },
+  {
+    "id": "The Great Depression-B2",
+    "metric": "Type Token Ratio",
+    "value": 0.65
+  },
+  {
+    "id": "Butterflies-B2",
+    "metric": "Type Token Ratio",
+    "value": 0.69
+  },
+  {
+    "id": "Dogs-B2",
+    "metric": "Type Token Ratio",
+    "value": 0.67
+  },
+  {
+    "id": "Semantics-B2",
+    "metric": "Type Token Ratio",
+    "value": 0.57
+  },
+  {
+    "id": "The Internet-B2",
+    "metric": "Type Token Ratio",
+    "value": 0.57
+  },
+  {
+    "id": "The Moon-B2",
+    "metric": "Type Token Ratio",
+    "value": 0.55
+  },
+  {
+    "id": "Color Blindness-C1",
+    "metric": "Type Token Ratio",
+    "value": 0.65
+  },
+  {
+    "id": "The Great Depression-C1",
+    "metric": "Type Token Ratio",
+    "value": 0.66
+  },
+  {
+    "id": "Butterflies-C1",
+    "metric": "Type Token Ratio",
+    "value": 0.67
+  },
+  {
+    "id": "Dogs-C1",
+    "metric": "Type Token Ratio",
+    "value": 0.67
+  },
+  {
+    "id": "Semantics-C1",
+    "metric": "Type Token Ratio",
+    "value": 0.56
+  },
+  {
+    "id": "The Internet-C1",
+    "metric": "Type Token Ratio",
+    "value": 0.66
+  },
+  {
+    "id": "The Moon-C1",
+    "metric": "Type Token Ratio",
+    "value": 0.63
+  },
+  {
+    "id": "Color Blindness-C2",
+    "metric": "Type Token Ratio",
+    "value": 0.58
+  },
+  {
+    "id": "The Great Depression-C2",
+    "metric": "Type Token Ratio",
+    "value": 0.64
+  },
+  {
+    "id": "Butterflies-C2",
+    "metric": "Type Token Ratio",
+    "value": 0.71
+  },
+  {
+    "id": "Dogs-C2",
+    "metric": "Type Token Ratio",
+    "value": 0.72
+  },
+  {
+    "id": "Semantics-C2",
+    "metric": "Type Token Ratio",
+    "value": 0.62
+  },
+  {
+    "id": "The Internet-C2",
+    "metric": "Type Token Ratio",
+    "value": 0.66
+  },
+  {
+    "id": "The Moon-C2",
+    "metric": "Type Token Ratio",
+    "value": 0.65
+  },
+  {
+    "id": "Dinosaurs-A1",
+    "metric": "Type Token Ratio",
+    "value": 0.66
+  },
+  {
+    "id": "Economics-A1",
+    "metric": "Type Token Ratio",
+    "value": 0.6842
+  },
+  {
+    "id": "Quantum Mechanics-A1",
+    "metric": "Type Token Ratio",
+    "value": 0.62
+  },
+  {
+    "id": "Dinosaurs-A2",
+    "metric": "Type Token Ratio",
+    "value": 0.66
+  },
+  {
+    "id": "Economics-A2",
+    "metric": "Type Token Ratio",
+    "value": 0.62
+  },
+  {
+    "id": "Quantum Mechanics-A2",
+    "metric": "Type Token Ratio",
+    "value": 0.67
+  },
+  {
+    "id": "Dinosaurs-B1",
+    "metric": "Type Token Ratio",
+    "value": 0.71
+  },
+  {
+    "id": "Economics-B1",
+    "metric": "Type Token Ratio",
+    "value": 0.65
+  },
+  {
+    "id": "Quantum Mechanics-B1",
+    "metric": "Type Token Ratio",
+    "value": 0.58
+  },
+  {
+    "id": "Dinosaurs-B2",
+    "metric": "Type Token Ratio",
+    "value": 0.69
+  },
+  {
+    "id": "Economics-B2",
+    "metric": "Type Token Ratio",
+    "value": 0.65
+  },
+  {
+    "id": "Quantum Mechanics-B2",
+    "metric": "Type Token Ratio",
+    "value": 0.65
+  },
+  {
+    "id": "Dinosaurs-C1",
+    "metric": "Type Token Ratio",
+    "value": 0.69
+  },
+  {
+    "id": "Economics-C1",
+    "metric": "Type Token Ratio",
+    "value": 0.65
+  },
+  {
+    "id": "Quantum Mechanics-C1",
+    "metric": "Type Token Ratio",
+    "value": 0.62
+  },
+  {
+    "id": "Dinosaurs-C2",
+    "metric": "Type Token Ratio",
+    "value": 0.71
+  },
+  {
+    "id": "Economics-C2",
+    "metric": "Type Token Ratio",
+    "value": 0.64
+  },
+  {
+    "id": "Quantum Mechanics-C2",
+    "metric": "Type Token Ratio",
+    "value": 0.65
+  },
+  {
+    "id": "wikisimple-Color Blindness",
+    "metric": "Type Token Ratio",
+    "value": 0.6
+  },
+  {
+    "id": "wikisimple-Great Depression",
+    "metric": "Type Token Ratio",
+    "value": 0.6
+  },
+  {
+    "id": "wikisimple-Butterfly",
+    "metric": "Type Token Ratio",
+    "value": 0.65
+  },
+  {
+    "id": "wikisimple-Dog",
+    "metric": "Type Token Ratio",
+    "value": 0.72
+  },
+  {
+    "id": "wikisimple-Semantics",
+    "metric": "Type Token Ratio",
+    "value": 0.75
+  },
+  {
+    "id": "wikisimple-Internet",
+    "metric": "Type Token Ratio",
+    "value": 0.66
+  },
+  {
+    "id": "wikisimple-Moon",
+    "metric": "Type Token Ratio",
+    "value": 0.6
+  },
+  {
+    "id": "wikisimple-Dinosaur",
+    "metric": "Type Token Ratio",
+    "value": 0.7
+  },
+  {
+    "id": "wikisimple-Economics",
+    "metric": "Type Token Ratio",
+    "value": 0.67
+  },
+  {
+    "id": "wikisimple-Quantum Mechanics",
+    "metric": "Type Token Ratio",
+    "value": 0.66
+  },
+  {
+    "id": "wikistandard-Color Blindness",
+    "metric": "Type Token Ratio",
+    "value": 0.73
+  },
+  {
+    "id": "wikistandard-Great Depression",
+    "metric": "Type Token Ratio",
+    "value": 0.69
+  },
+  {
+    "id": "wikistandard-Butterfly",
+    "metric": "Type Token Ratio",
+    "value": 0.72
+  },
+  {
+    "id": "wikistandard-Dog",
+    "metric": "Type Token Ratio",
+    "value": 0.7
+  },
+  {
+    "id": "wikistandard-Semantics",
+    "metric": "Type Token Ratio",
+    "value": 0.67
+  },
+  {
+    "id": "wikistandard-Internet",
+    "metric": "Type Token Ratio",
+    "value": 0.62
+  },
+  {
+    "id": "wikistandard-Moon",
+    "metric": "Type Token Ratio",
+    "value": 0.65
+  },
+  {
+    "id": "wikistandard-Dinosaur",
+    "metric": "Type Token Ratio",
+    "value": 0.71
+  },
+  {
+    "id": "wikistandard-Economics",
+    "metric": "Type Token Ratio",
+    "value": 0.59
+  },
+  {
+    "id": "wikistandard-Quantum Mechanics",
+    "metric": "Type Token Ratio",
+    "value": 0.59
+  },
+  {
+    "id": "Color Blindness-A1",
+    "metric": "Clauses Per Sentence",
+    "value": 2.6
+  },
+  {
+    "id": "The Great Depression-A1",
+    "metric": "Clauses Per Sentence",
+    "value": 1.6
+  },
+  {
+    "id": "Butterflies-A1",
+    "metric": "Clauses Per Sentence",
+    "value": 1.2222
+  },
+  {
+    "id": "Dogs-A1",
+    "metric": "Clauses Per Sentence",
+    "value": 2.0
+  },
+  {
+    "id": "Semantics-A1",
+    "metric": "Clauses Per Sentence",
+    "value": 2.6667
+  },
+  {
+    "id": "The Internet-A1",
+    "metric": "Clauses Per Sentence",
+    "value": 2.2
+  },
+  {
+    "id": "The Moon-A1",
+    "metric": "Clauses Per Sentence",
+    "value": 1.2
+  },
+  {
+    "id": "Color Blindness-A2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.5455
+  },
+  {
+    "id": "The Great Depression-A2",
+    "metric": "Clauses Per Sentence",
+    "value": 1.7143
+  },
+  {
+    "id": "Butterflies-A2",
+    "metric": "Clauses Per Sentence",
+    "value": 1.7
+  },
+  {
+    "id": "Dogs-A2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.3636
+  },
+  {
+    "id": "Semantics-A2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.625
+  },
+  {
+    "id": "The Internet-A2",
+    "metric": "Clauses Per Sentence",
+    "value": 3.0
+  },
+  {
+    "id": "The Moon-A2",
+    "metric": "Clauses Per Sentence",
+    "value": 1.2
+  },
+  {
+    "id": "Color Blindness-B1",
+    "metric": "Clauses Per Sentence",
+    "value": 3.1111
+  },
+  {
+    "id": "The Great Depression-B1",
+    "metric": "Clauses Per Sentence",
+    "value": 2.125
+  },
+  {
+    "id": "Butterflies-B1",
+    "metric": "Clauses Per Sentence",
+    "value": 2.1429
+  },
+  {
+    "id": "Dogs-B1",
+    "metric": "Clauses Per Sentence",
+    "value": 1.8182
+  },
+  {
+    "id": "Semantics-B1",
+    "metric": "Clauses Per Sentence",
+    "value": 2.0
+  },
+  {
+    "id": "The Internet-B1",
+    "metric": "Clauses Per Sentence",
+    "value": 2.5714
+  },
+  {
+    "id": "The Moon-B1",
+    "metric": "Clauses Per Sentence",
+    "value": 1.0
+  },
+  {
+    "id": "Color Blindness-B2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.5
+  },
+  {
+    "id": "The Great Depression-B2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.0
+  },
+  {
+    "id": "Butterflies-B2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.1111
+  },
+  {
+    "id": "Dogs-B2",
+    "metric": "Clauses Per Sentence",
+    "value": 1.9
+  },
+  {
+    "id": "Semantics-B2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.75
+  },
+  {
+    "id": "The Internet-B2",
+    "metric": "Clauses Per Sentence",
+    "value": 1.5556
+  },
+  {
+    "id": "The Moon-B2",
+    "metric": "Clauses Per Sentence",
+    "value": 1.6154
+  },
+  {
+    "id": "Color Blindness-C1",
+    "metric": "Clauses Per Sentence",
+    "value": 2.3636
+  },
+  {
+    "id": "The Great Depression-C1",
+    "metric": "Clauses Per Sentence",
+    "value": 1.5556
+  },
+  {
+    "id": "Butterflies-C1",
+    "metric": "Clauses Per Sentence",
+    "value": 2.0909
+  },
+  {
+    "id": "Dogs-C1",
+    "metric": "Clauses Per Sentence",
+    "value": 1.8182
+  },
+  {
+    "id": "Semantics-C1",
+    "metric": "Clauses Per Sentence",
+    "value": 2.1667
+  },
+  {
+    "id": "The Internet-C1",
+    "metric": "Clauses Per Sentence",
+    "value": 2.0
+  },
+  {
+    "id": "The Moon-C1",
+    "metric": "Clauses Per Sentence",
+    "value": 1.5
+  },
+  {
+    "id": "Color Blindness-C2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.1538
+  },
+  {
+    "id": "The Great Depression-C2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.0
+  },
+  {
+    "id": "Butterflies-C2",
+    "metric": "Clauses Per Sentence",
+    "value": 1.7778
+  },
+  {
+    "id": "Dogs-C2",
+    "metric": "Clauses Per Sentence",
+    "value": 1.8182
+  },
+  {
+    "id": "Semantics-C2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.0
+  },
+  {
+    "id": "The Internet-C2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.0
+  },
+  {
+    "id": "The Moon-C2",
+    "metric": "Clauses Per Sentence",
+    "value": 1.9231
+  },
+  {
+    "id": "Dinosaurs-A1",
+    "metric": "Clauses Per Sentence",
+    "value": 1.8333
+  },
+  {
+    "id": "Economics-A1",
+    "metric": "Clauses Per Sentence",
+    "value": 2.4
+  },
+  {
+    "id": "Quantum Mechanics-A1",
+    "metric": "Clauses Per Sentence",
+    "value": 1.6
+  },
+  {
+    "id": "Dinosaurs-A2",
+    "metric": "Clauses Per Sentence",
+    "value": 1.5455
+  },
+  {
+    "id": "Economics-A2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.125
+  },
+  {
+    "id": "Quantum Mechanics-A2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.2222
+  },
+  {
+    "id": "Dinosaurs-B1",
+    "metric": "Clauses Per Sentence",
+    "value": 2.0
+  },
+  {
+    "id": "Economics-B1",
+    "metric": "Clauses Per Sentence",
+    "value": 3.1667
+  },
+  {
+    "id": "Quantum Mechanics-B1",
+    "metric": "Clauses Per Sentence",
+    "value": 1.2
+  },
+  {
+    "id": "Dinosaurs-B2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.0
+  },
+  {
+    "id": "Economics-B2",
+    "metric": "Clauses Per Sentence",
+    "value": 1.7778
+  },
+  {
+    "id": "Quantum Mechanics-B2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.4286
+  },
+  {
+    "id": "Dinosaurs-C1",
+    "metric": "Clauses Per Sentence",
+    "value": 1.75
+  },
+  {
+    "id": "Economics-C1",
+    "metric": "Clauses Per Sentence",
+    "value": 1.4286
+  },
+  {
+    "id": "Quantum Mechanics-C1",
+    "metric": "Clauses Per Sentence",
+    "value": 3.0
+  },
+  {
+    "id": "Dinosaurs-C2",
+    "metric": "Clauses Per Sentence",
+    "value": 1.8889
+  },
+  {
+    "id": "Economics-C2",
+    "metric": "Clauses Per Sentence",
+    "value": 1.8333
+  },
+  {
+    "id": "Quantum Mechanics-C2",
+    "metric": "Clauses Per Sentence",
+    "value": 2.0
+  },
+  {
+    "id": "wikisimple-Color Blindness",
+    "metric": "Clauses Per Sentence",
+    "value": 1.6364
+  },
+  {
+    "id": "wikisimple-Great Depression",
+    "metric": "Clauses Per Sentence",
+    "value": 1.5778
+  },
+  {
+    "id": "wikisimple-Butterfly",
+    "metric": "Clauses Per Sentence",
+    "value": 1.4478
+  },
+  {
+    "id": "wikisimple-Dog",
+    "metric": "Clauses Per Sentence",
+    "value": 1.5303
+  },
+  {
+    "id": "wikisimple-Semantics",
+    "metric": "Clauses Per Sentence",
+    "value": 1.75
+  },
+  {
+    "id": "wikisimple-Internet",
+    "metric": "Clauses Per Sentence",
+    "value": 1.5128
+  },
+  {
+    "id": "wikisimple-Moon",
+    "metric": "Clauses Per Sentence",
+    "value": 1.8824
+  },
+  {
+    "id": "wikisimple-Dinosaur",
+    "metric": "Clauses Per Sentence",
+    "value": 1.3316
+  },
+  {
+    "id": "wikisimple-Economics",
+    "metric": "Clauses Per Sentence",
+    "value": 1.5326
+  },
+  {
+    "id": "wikisimple-Quantum Mechanics",
+    "metric": "Clauses Per Sentence",
+    "value": 2.0906
+  },
+  {
+    "id": "wikistandard-Color Blindness",
+    "metric": "Clauses Per Sentence",
+    "value": 1.8835
+  },
+  {
+    "id": "wikistandard-Great Depression",
+    "metric": "Clauses Per Sentence",
+    "value": 1.8347
+  },
+  {
+    "id": "wikistandard-Butterfly",
+    "metric": "Clauses Per Sentence",
+    "value": 1.8134
+  },
+  {
+    "id": "wikistandard-Dog",
+    "metric": "Clauses Per Sentence",
+    "value": 1.9394
+  },
+  {
+    "id": "wikistandard-Semantics",
+    "metric": "Clauses Per Sentence",
+    "value": 1.807
+  },
+  {
+    "id": "wikistandard-Internet",
+    "metric": "Clauses Per Sentence",
+    "value": 1.9258
+  },
+  {
+    "id": "wikistandard-Moon",
+    "metric": "Clauses Per Sentence",
+    "value": 1.8165
+  },
+  {
+    "id": "wikistandard-Dinosaur",
+    "metric": "Clauses Per Sentence",
+    "value": 1.8638
+  },
+  {
+    "id": "wikistandard-Economics",
+    "metric": "Clauses Per Sentence",
+    "value": 2.0
+  },
+  {
+    "id": "wikistandard-Quantum Mechanics",
+    "metric": "Clauses Per Sentence",
+    "value": 1.8756
+  },
+  {
+    "id": "Color Blindness-A1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.8
+  },
+  {
+    "id": "The Great Depression-A1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.4
+  },
+  {
+    "id": "Butterflies-A1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 4.0
+  },
+  {
+    "id": "Dogs-A1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.4
+  },
+  {
+    "id": "Semantics-A1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 7.3333
+  },
+  {
+    "id": "The Internet-A1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 7.6
+  },
+  {
+    "id": "The Moon-A1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.4
+  },
+  {
+    "id": "Color Blindness-A2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.9091
+  },
+  {
+    "id": "The Great Depression-A2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.7143
+  },
+  {
+    "id": "Butterflies-A2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 7.7
+  },
+  {
+    "id": "Dogs-A2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.0909
+  },
+  {
+    "id": "Semantics-A2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.25
+  },
+  {
+    "id": "The Internet-A2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.4286
+  },
+  {
+    "id": "The Moon-A2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.6
+  },
+  {
+    "id": "Color Blindness-B1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.0
+  },
+  {
+    "id": "The Great Depression-B1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 7.375
+  },
+  {
+    "id": "Butterflies-B1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 5.1429
+  },
+  {
+    "id": "Dogs-B1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.2727
+  },
+  {
+    "id": "Semantics-B1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 6.1667
+  },
+  {
+    "id": "The Internet-B1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 13.1429
+  },
+  {
+    "id": "The Moon-B1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.6667
+  },
+  {
+    "id": "Color Blindness-B2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.3
+  },
+  {
+    "id": "The Great Depression-B2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.2667
+  },
+  {
+    "id": "Butterflies-B2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.3333
+  },
+  {
+    "id": "Dogs-B2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.0
+  },
+  {
+    "id": "Semantics-B2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 7.625
+  },
+  {
+    "id": "The Internet-B2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 7.6667
+  },
+  {
+    "id": "The Moon-B2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.0769
+  },
+  {
+    "id": "Color Blindness-C1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.9091
+  },
+  {
+    "id": "The Great Depression-C1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.0
+  },
+  {
+    "id": "Butterflies-C1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.0909
+  },
+  {
+    "id": "Dogs-C1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.0909
+  },
+  {
+    "id": "Semantics-C1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 7.3333
+  },
+  {
+    "id": "The Internet-C1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.2
+  },
+  {
+    "id": "The Moon-C1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.5
+  },
+  {
+    "id": "Color Blindness-C2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.0769
+  },
+  {
+    "id": "The Great Depression-C2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.25
+  },
+  {
+    "id": "Butterflies-C2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.8889
+  },
+  {
+    "id": "Dogs-C2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 11.1818
+  },
+  {
+    "id": "Semantics-C2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.5455
+  },
+  {
+    "id": "The Internet-C2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.25
+  },
+  {
+    "id": "The Moon-C2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 7.9231
+  },
+  {
+    "id": "Dinosaurs-A1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 6.6667
+  },
+  {
+    "id": "Economics-A1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 7.8
+  },
+  {
+    "id": "Quantum Mechanics-A1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.6
+  },
+  {
+    "id": "Dinosaurs-A2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.3636
+  },
+  {
+    "id": "Economics-A2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 7.375
+  },
+  {
+    "id": "Quantum Mechanics-A2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.0
+  },
+  {
+    "id": "Dinosaurs-B1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 7.5556
+  },
+  {
+    "id": "Economics-B1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.3333
+  },
+  {
+    "id": "Quantum Mechanics-B1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.5
+  },
+  {
+    "id": "Dinosaurs-B2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.2
+  },
+  {
+    "id": "Economics-B2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.4444
+  },
+  {
+    "id": "Quantum Mechanics-B2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.5714
+  },
+  {
+    "id": "Dinosaurs-C1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.5
+  },
+  {
+    "id": "Economics-C1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.1429
+  },
+  {
+    "id": "Quantum Mechanics-C1",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.7
+  },
+  {
+    "id": "Dinosaurs-C2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.1111
+  },
+  {
+    "id": "Economics-C2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 11.3333
+  },
+  {
+    "id": "Quantum Mechanics-C2",
+    "metric": "Length of Longest Dependency Link",
+    "value": 11.3333
+  },
+  {
+    "id": "wikisimple-Color Blindness",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.0076
+  },
+  {
+    "id": "wikisimple-Great Depression",
+    "metric": "Length of Longest Dependency Link",
+    "value": 7.4889
+  },
+  {
+    "id": "wikisimple-Butterfly",
+    "metric": "Length of Longest Dependency Link",
+    "value": 6.1642
+  },
+  {
+    "id": "wikisimple-Dog",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.7576
+  },
+  {
+    "id": "wikisimple-Semantics",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.0625
+  },
+  {
+    "id": "wikisimple-Internet",
+    "metric": "Length of Longest Dependency Link",
+    "value": 8.0513
+  },
+  {
+    "id": "wikisimple-Moon",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.2353
+  },
+  {
+    "id": "wikisimple-Dinosaur",
+    "metric": "Length of Longest Dependency Link",
+    "value": 7.0632
+  },
+  {
+    "id": "wikisimple-Economics",
+    "metric": "Length of Longest Dependency Link",
+    "value": 6.1304
+  },
+  {
+    "id": "wikisimple-Quantum Mechanics",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.7152
+  },
+  {
+    "id": "wikistandard-Color Blindness",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.5122
+  },
+  {
+    "id": "wikistandard-Great Depression",
+    "metric": "Length of Longest Dependency Link",
+    "value": 11.127
+  },
+  {
+    "id": "wikistandard-Butterfly",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.4216
+  },
+  {
+    "id": "wikistandard-Dog",
+    "metric": "Length of Longest Dependency Link",
+    "value": 11.2323
+  },
+  {
+    "id": "wikistandard-Semantics",
+    "metric": "Length of Longest Dependency Link",
+    "value": 10.5702
+  },
+  {
+    "id": "wikistandard-Internet",
+    "metric": "Length of Longest Dependency Link",
+    "value": 12.3384
+  },
+  {
+    "id": "wikistandard-Moon",
+    "metric": "Length of Longest Dependency Link",
+    "value": 12.8495
+  },
+  {
+    "id": "wikistandard-Dinosaur",
+    "metric": "Length of Longest Dependency Link",
+    "value": 12.59
+  },
+  {
+    "id": "wikistandard-Economics",
+    "metric": "Length of Longest Dependency Link",
+    "value": 11.738
+  },
+  {
+    "id": "wikistandard-Quantum Mechanics",
+    "metric": "Length of Longest Dependency Link",
+    "value": 9.8472
+  },
+  {
+    "id": "Color Blindness-A1",
+    "metric": "Parse Tree Depth",
+    "value": 5.4
+  },
+  {
+    "id": "The Great Depression-A1",
+    "metric": "Parse Tree Depth",
+    "value": 4.4
+  },
+  {
+    "id": "Butterflies-A1",
+    "metric": "Parse Tree Depth",
+    "value": 3.6667
+  },
+  {
+    "id": "Dogs-A1",
+    "metric": "Parse Tree Depth",
+    "value": 5.8
+  },
+  {
+    "id": "Semantics-A1",
+    "metric": "Parse Tree Depth",
+    "value": 5.8333
+  },
+  {
+    "id": "The Internet-A1",
+    "metric": "Parse Tree Depth",
+    "value": 5.4
+  },
+  {
+    "id": "The Moon-A1",
+    "metric": "Parse Tree Depth",
+    "value": 4.2
+  },
+  {
+    "id": "Color Blindness-A2",
+    "metric": "Parse Tree Depth",
+    "value": 5.6364
+  },
+  {
+    "id": "The Great Depression-A2",
+    "metric": "Parse Tree Depth",
+    "value": 4.5714
+  },
+  {
+    "id": "Butterflies-A2",
+    "metric": "Parse Tree Depth",
+    "value": 5.3
+  },
+  {
+    "id": "Dogs-A2",
+    "metric": "Parse Tree Depth",
+    "value": 5.6364
+  },
+  {
+    "id": "Semantics-A2",
+    "metric": "Parse Tree Depth",
+    "value": 5.875
+  },
+  {
+    "id": "The Internet-A2",
+    "metric": "Parse Tree Depth",
+    "value": 6.4286
+  },
+  {
+    "id": "The Moon-A2",
+    "metric": "Parse Tree Depth",
+    "value": 4.8
+  },
+  {
+    "id": "Color Blindness-B1",
+    "metric": "Parse Tree Depth",
+    "value": 5.6667
+  },
+  {
+    "id": "The Great Depression-B1",
+    "metric": "Parse Tree Depth",
+    "value": 5.0
+  },
+  {
+    "id": "Butterflies-B1",
+    "metric": "Parse Tree Depth",
+    "value": 4.7143
+  },
+  {
+    "id": "Dogs-B1",
+    "metric": "Parse Tree Depth",
+    "value": 4.9091
+  },
+  {
+    "id": "Semantics-B1",
+    "metric": "Parse Tree Depth",
+    "value": 5.5
+  },
+  {
+    "id": "The Internet-B1",
+    "metric": "Parse Tree Depth",
+    "value": 6.1429
+  },
+  {
+    "id": "The Moon-B1",
+    "metric": "Parse Tree Depth",
+    "value": 3.6667
+  },
+  {
+    "id": "Color Blindness-B2",
+    "metric": "Parse Tree Depth",
+    "value": 5.9
+  },
+  {
+    "id": "The Great Depression-B2",
+    "metric": "Parse Tree Depth",
+    "value": 5.3333
+  },
+  {
+    "id": "Butterflies-B2",
+    "metric": "Parse Tree Depth",
+    "value": 5.1111
+  },
+  {
+    "id": "Dogs-B2",
+    "metric": "Parse Tree Depth",
+    "value": 5.4
+  },
+  {
+    "id": "Semantics-B2",
+    "metric": "Parse Tree Depth",
+    "value": 6.5
+  },
+  {
+    "id": "The Internet-B2",
+    "metric": "Parse Tree Depth",
+    "value": 5.1111
+  },
+  {
+    "id": "The Moon-B2",
+    "metric": "Parse Tree Depth",
+    "value": 5.0
+  },
+  {
+    "id": "Color Blindness-C1",
+    "metric": "Parse Tree Depth",
+    "value": 5.3636
+  },
+  {
+    "id": "The Great Depression-C1",
+    "metric": "Parse Tree Depth",
+    "value": 4.8889
+  },
+  {
+    "id": "Butterflies-C1",
+    "metric": "Parse Tree Depth",
+    "value": 5.0
+  },
+  {
+    "id": "Dogs-C1",
+    "metric": "Parse Tree Depth",
+    "value": 5.8182
+  },
+  {
+    "id": "Semantics-C1",
+    "metric": "Parse Tree Depth",
+    "value": 6.1667
+  },
+  {
+    "id": "The Internet-C1",
+    "metric": "Parse Tree Depth",
+    "value": 5.4
+  },
+  {
+    "id": "The Moon-C1",
+    "metric": "Parse Tree Depth",
+    "value": 4.75
+  },
+  {
+    "id": "Color Blindness-C2",
+    "metric": "Parse Tree Depth",
+    "value": 5.2308
+  },
+  {
+    "id": "The Great Depression-C2",
+    "metric": "Parse Tree Depth",
+    "value": 5.125
+  },
+  {
+    "id": "Butterflies-C2",
+    "metric": "Parse Tree Depth",
+    "value": 5.6667
+  },
+  {
+    "id": "Dogs-C2",
+    "metric": "Parse Tree Depth",
+    "value": 5.1818
+  },
+  {
+    "id": "Semantics-C2",
+    "metric": "Parse Tree Depth",
+    "value": 6.0909
+  },
+  {
+    "id": "The Internet-C2",
+    "metric": "Parse Tree Depth",
+    "value": 5.5
+  },
+  {
+    "id": "The Moon-C2",
+    "metric": "Parse Tree Depth",
+    "value": 4.9231
+  },
+  {
+    "id": "Dinosaurs-A1",
+    "metric": "Parse Tree Depth",
+    "value": 5.8333
+  },
+  {
+    "id": "Economics-A1",
+    "metric": "Parse Tree Depth",
+    "value": 5.8
+  },
+  {
+    "id": "Quantum Mechanics-A1",
+    "metric": "Parse Tree Depth",
+    "value": 4.8
+  },
+  {
+    "id": "Dinosaurs-A2",
+    "metric": "Parse Tree Depth",
+    "value": 4.5455
+  },
+  {
+    "id": "Economics-A2",
+    "metric": "Parse Tree Depth",
+    "value": 5.25
+  },
+  {
+    "id": "Quantum Mechanics-A2",
+    "metric": "Parse Tree Depth",
+    "value": 6.1111
+  },
+  {
+    "id": "Dinosaurs-B1",
+    "metric": "Parse Tree Depth",
+    "value": 5.3333
+  },
+  {
+    "id": "Economics-B1",
+    "metric": "Parse Tree Depth",
+    "value": 7.0
+  },
+  {
+    "id": "Quantum Mechanics-B1",
+    "metric": "Parse Tree Depth",
+    "value": 5.9
+  },
+  {
+    "id": "Dinosaurs-B2",
+    "metric": "Parse Tree Depth",
+    "value": 5.0
+  },
+  {
+    "id": "Economics-B2",
+    "metric": "Parse Tree Depth",
+    "value": 6.3333
+  },
+  {
+    "id": "Quantum Mechanics-B2",
+    "metric": "Parse Tree Depth",
+    "value": 6.7143
+  },
+  {
+    "id": "Dinosaurs-C1",
+    "metric": "Parse Tree Depth",
+    "value": 5.3333
+  },
+  {
+    "id": "Economics-C1",
+    "metric": "Parse Tree Depth",
+    "value": 5.5714
+  },
+  {
+    "id": "Quantum Mechanics-C1",
+    "metric": "Parse Tree Depth",
+    "value": 7.2
+  },
+  {
+    "id": "Dinosaurs-C2",
+    "metric": "Parse Tree Depth",
+    "value": 5.3333
+  },
+  {
+    "id": "Economics-C2",
+    "metric": "Parse Tree Depth",
+    "value": 5.6667
+  },
+  {
+    "id": "Quantum Mechanics-C2",
+    "metric": "Parse Tree Depth",
+    "value": 5.5556
+  },
+  {
+    "id": "wikisimple-Color Blindness",
+    "metric": "Parse Tree Depth",
+    "value": 4.7727
+  },
+  {
+    "id": "wikisimple-Great Depression",
+    "metric": "Parse Tree Depth",
+    "value": 4.3556
+  },
+  {
+    "id": "wikisimple-Butterfly",
+    "metric": "Parse Tree Depth",
+    "value": 4.0547
+  },
+  {
+    "id": "wikisimple-Dog",
+    "metric": "Parse Tree Depth",
+    "value": 4.6061
+  },
+  {
+    "id": "wikisimple-Semantics",
+    "metric": "Parse Tree Depth",
+    "value": 5.1875
+  },
+  {
+    "id": "wikisimple-Internet",
+    "metric": "Parse Tree Depth",
+    "value": 4.5641
+  },
+  {
+    "id": "wikisimple-Moon",
+    "metric": "Parse Tree Depth",
+    "value": 4.8088
+  },
+  {
+    "id": "wikisimple-Dinosaur",
+    "metric": "Parse Tree Depth",
+    "value": 4.4211
+  },
+  {
+    "id": "wikisimple-Economics",
+    "metric": "Parse Tree Depth",
+    "value": 4.3043
+  },
+  {
+    "id": "wikisimple-Quantum Mechanics",
+    "metric": "Parse Tree Depth",
+    "value": 5.2136
+  },
+  {
+    "id": "wikistandard-Color Blindness",
+    "metric": "Parse Tree Depth",
+    "value": 5.4119
+  },
+  {
+    "id": "wikistandard-Great Depression",
+    "metric": "Parse Tree Depth",
+    "value": 5.3852
+  },
+  {
+    "id": "wikistandard-Butterfly",
+    "metric": "Parse Tree Depth",
+    "value": 5.5112
+  },
+  {
+    "id": "wikistandard-Dog",
+    "metric": "Parse Tree Depth",
+    "value": 5.6902
+  },
+  {
+    "id": "wikistandard-Semantics",
+    "metric": "Parse Tree Depth",
+    "value": 6.2807
+  },
+  {
+    "id": "wikistandard-Internet",
+    "metric": "Parse Tree Depth",
+    "value": 5.8974
+  },
+  {
+    "id": "wikistandard-Moon",
+    "metric": "Parse Tree Depth",
+    "value": 5.8186
+  },
+  {
+    "id": "wikistandard-Dinosaur",
+    "metric": "Parse Tree Depth",
+    "value": 5.5754
+  },
+  {
+    "id": "wikistandard-Economics",
+    "metric": "Parse Tree Depth",
+    "value": 6.0732
+  },
+  {
+    "id": "wikistandard-Quantum Mechanics",
+    "metric": "Parse Tree Depth",
+    "value": 5.1684
+  },
+  {
+    "id": "Color Blindness-A1",
+    "metric": "Words in Top 3000",
+    "value": 0.8298
+  },
+  {
+    "id": "The Great Depression-A1",
+    "metric": "Words in Top 3000",
+    "value": 0.8506
+  },
+  {
+    "id": "Butterflies-A1",
+    "metric": "Words in Top 3000",
+    "value": 0.7465
+  },
+  {
+    "id": "Dogs-A1",
+    "metric": "Words in Top 3000",
+    "value": 0.8427
+  },
+  {
+    "id": "Semantics-A1",
+    "metric": "Words in Top 3000",
+    "value": 0.8661
+  },
+  {
+    "id": "The Internet-A1",
+    "metric": "Words in Top 3000",
+    "value": 0.9556
+  },
+  {
+    "id": "The Moon-A1",
+    "metric": "Words in Top 3000",
+    "value": 0.8132
+  },
+  {
+    "id": "Color Blindness-A2",
+    "metric": "Words in Top 3000",
+    "value": 0.8326
+  },
+  {
+    "id": "The Great Depression-A2",
+    "metric": "Words in Top 3000",
+    "value": 0.7903
+  },
+  {
+    "id": "Butterflies-A2",
+    "metric": "Words in Top 3000",
+    "value": 0.8059
+  },
+  {
+    "id": "Dogs-A2",
+    "metric": "Words in Top 3000",
+    "value": 0.8462
+  },
+  {
+    "id": "Semantics-A2",
+    "metric": "Words in Top 3000",
+    "value": 0.8012
+  },
+  {
+    "id": "The Internet-A2",
+    "metric": "Words in Top 3000",
+    "value": 0.9437
+  },
+  {
+    "id": "The Moon-A2",
+    "metric": "Words in Top 3000",
+    "value": 0.8041
+  },
+  {
+    "id": "Color Blindness-B1",
+    "metric": "Words in Top 3000",
+    "value": 0.8216
+  },
+  {
+    "id": "The Great Depression-B1",
+    "metric": "Words in Top 3000",
+    "value": 0.8015
+  },
+  {
+    "id": "Butterflies-B1",
+    "metric": "Words in Top 3000",
+    "value": 0.7988
+  },
+  {
+    "id": "Dogs-B1",
+    "metric": "Words in Top 3000",
+    "value": 0.8014
+  },
+  {
+    "id": "Semantics-B1",
+    "metric": "Words in Top 3000",
+    "value": 0.8646
+  },
+  {
+    "id": "The Internet-B1",
+    "metric": "Words in Top 3000",
+    "value": 0.9152
+  },
+  {
+    "id": "The Moon-B1",
+    "metric": "Words in Top 3000",
+    "value": 0.8396
+  },
+  {
+    "id": "Color Blindness-B2",
+    "metric": "Words in Top 3000",
+    "value": 0.7487
+  },
+  {
+    "id": "The Great Depression-B2",
+    "metric": "Words in Top 3000",
+    "value": 0.7873
+  },
+  {
+    "id": "Butterflies-B2",
+    "metric": "Words in Top 3000",
+    "value": 0.8246
+  },
+  {
+    "id": "Dogs-B2",
+    "metric": "Words in Top 3000",
+    "value": 0.8171
+  },
+  {
+    "id": "Semantics-B2",
+    "metric": "Words in Top 3000",
+    "value": 0.8562
+  },
+  {
+    "id": "The Internet-B2",
+    "metric": "Words in Top 3000",
+    "value": 0.9357
+  },
+  {
+    "id": "The Moon-B2",
+    "metric": "Words in Top 3000",
+    "value": 0.8889
+  },
+  {
+    "id": "Color Blindness-C1",
+    "metric": "Words in Top 3000",
+    "value": 0.8173
+  },
+  {
+    "id": "The Great Depression-C1",
+    "metric": "Words in Top 3000",
+    "value": 0.7793
+  },
+  {
+    "id": "Butterflies-C1",
+    "metric": "Words in Top 3000",
+    "value": 0.8063
+  },
+  {
+    "id": "Dogs-C1",
+    "metric": "Words in Top 3000",
+    "value": 0.8071
+  },
+  {
+    "id": "Semantics-C1",
+    "metric": "Words in Top 3000",
+    "value": 0.832
+  },
+  {
+    "id": "The Internet-C1",
+    "metric": "Words in Top 3000",
+    "value": 0.9011
+  },
+  {
+    "id": "The Moon-C1",
+    "metric": "Words in Top 3000",
+    "value": 0.7483
+  },
+  {
+    "id": "Color Blindness-C2",
+    "metric": "Words in Top 3000",
+    "value": 0.8155
+  },
+  {
+    "id": "The Great Depression-C2",
+    "metric": "Words in Top 3000",
+    "value": 0.7756
+  },
+  {
+    "id": "Butterflies-C2",
+    "metric": "Words in Top 3000",
+    "value": 0.6931
+  },
+  {
+    "id": "Dogs-C2",
+    "metric": "Words in Top 3000",
+    "value": 0.8057
+  },
+  {
+    "id": "Semantics-C2",
+    "metric": "Words in Top 3000",
+    "value": 0.8279
+  },
+  {
+    "id": "The Internet-C2",
+    "metric": "Words in Top 3000",
+    "value": 0.9195
+  },
+  {
+    "id": "The Moon-C2",
+    "metric": "Words in Top 3000",
+    "value": 0.7609
+  },
+  {
+    "id": "Dinosaurs-A1",
+    "metric": "Words in Top 3000",
+    "value": 0.7582
+  },
+  {
+    "id": "Economics-A1",
+    "metric": "Words in Top 3000",
+    "value": 0.8571
+  },
+  {
+    "id": "Quantum Mechanics-A1",
+    "metric": "Words in Top 3000",
+    "value": 0.7849
+  },
+  {
+    "id": "Dinosaurs-A2",
+    "metric": "Words in Top 3000",
+    "value": 0.7582
+  },
+  {
+    "id": "Economics-A2",
+    "metric": "Words in Top 3000",
+    "value": 0.9097
+  },
+  {
+    "id": "Quantum Mechanics-A2",
+    "metric": "Words in Top 3000",
+    "value": 0.7841
+  },
+  {
+    "id": "Dinosaurs-B1",
+    "metric": "Words in Top 3000",
+    "value": 0.7055
+  },
+  {
+    "id": "Economics-B1",
+    "metric": "Words in Top 3000",
+    "value": 0.9118
+  },
+  {
+    "id": "Quantum Mechanics-B1",
+    "metric": "Words in Top 3000",
+    "value": 0.803
+  },
+  {
+    "id": "Dinosaurs-B2",
+    "metric": "Words in Top 3000",
+    "value": 0.6944
+  },
+  {
+    "id": "Economics-B2",
+    "metric": "Words in Top 3000",
+    "value": 0.8827
+  },
+  {
+    "id": "Quantum Mechanics-B2",
+    "metric": "Words in Top 3000",
+    "value": 0.7764
+  },
+  {
+    "id": "Dinosaurs-C1",
+    "metric": "Words in Top 3000",
+    "value": 0.7118
+  },
+  {
+    "id": "Economics-C1",
+    "metric": "Words in Top 3000",
+    "value": 0.8712
+  },
+  {
+    "id": "Quantum Mechanics-C1",
+    "metric": "Words in Top 3000",
+    "value": 0.7647
+  },
+  {
+    "id": "Dinosaurs-C2",
+    "metric": "Words in Top 3000",
+    "value": 0.7175
+  },
+  {
+    "id": "Economics-C2",
+    "metric": "Words in Top 3000",
+    "value": 0.84
+  },
+  {
+    "id": "Quantum Mechanics-C2",
+    "metric": "Words in Top 3000",
+    "value": 0.7539
+  },
+  {
+    "id": "wikisimple-Color Blindness",
+    "metric": "Words in Top 3000",
+    "value": 0.8109
+  },
+  {
+    "id": "wikisimple-Great Depression",
+    "metric": "Words in Top 3000",
+    "value": 0.7656
+  },
+  {
+    "id": "wikisimple-Butterfly",
+    "metric": "Words in Top 3000",
+    "value": 0.6991
+  },
+  {
+    "id": "wikisimple-Dog",
+    "metric": "Words in Top 3000",
+    "value": 0.7681
+  },
+  {
+    "id": "wikisimple-Semantics",
+    "metric": "Words in Top 3000",
+    "value": 0.7986
+  },
+  {
+    "id": "wikisimple-Internet",
+    "metric": "Words in Top 3000",
+    "value": 0.8131
+  },
+  {
+    "id": "wikisimple-Moon",
+    "metric": "Words in Top 3000",
+    "value": 0.7967
+  },
+  {
+    "id": "wikisimple-Dinosaur",
+    "metric": "Words in Top 3000",
+    "value": 0.5556
+  },
+  {
+    "id": "wikisimple-Economics",
+    "metric": "Words in Top 3000",
+    "value": 0.7535
+  },
+  {
+    "id": "wikisimple-Quantum Mechanics",
+    "metric": "Words in Top 3000",
+    "value": 0.7288
+  },
+  {
+    "id": "wikistandard-Color Blindness",
+    "metric": "Words in Top 3000",
+    "value": 0.67
+  },
+  {
+    "id": "wikistandard-Great Depression",
+    "metric": "Words in Top 3000",
+    "value": 0.6868
+  },
+  {
+    "id": "wikistandard-Butterfly",
+    "metric": "Words in Top 3000",
+    "value": 0.65
+  },
+  {
+    "id": "wikistandard-Dog",
+    "metric": "Words in Top 3000",
+    "value": 0.6843
+  },
+  {
+    "id": "wikistandard-Semantics",
+    "metric": "Words in Top 3000",
+    "value": 0.6796
+  },
+  {
+    "id": "wikistandard-Internet",
+    "metric": "Words in Top 3000",
+    "value": 0.764
+  },
+  {
+    "id": "wikistandard-Moon",
+    "metric": "Words in Top 3000",
+    "value": 0.6785
+  },
+  {
+    "id": "wikistandard-Dinosaur",
+    "metric": "Words in Top 3000",
+    "value": 0.5781
+  },
+  {
+    "id": "wikistandard-Economics",
+    "metric": "Words in Top 3000",
+    "value": 0.7363
+  },
+  {
+    "id": "wikistandard-Quantum Mechanics",
+    "metric": "Words in Top 3000",
+    "value": 0.6516
+  }
+]
