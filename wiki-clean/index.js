@@ -32,7 +32,6 @@ app.post("/clean", (req, res, next) => {
 app.post("/article", (req, res, next) => {
   try {
     const { title } = req.body;
-    console.log("title", title);
     return getNormalArticle(title)
       .then((text) => {
         res.json({ text });
