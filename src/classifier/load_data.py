@@ -24,9 +24,8 @@ def load_glove_data():
     return word2idx, idx2word, np.array(embs)
 
 
-def get_train_test_ids():
+def get_train_test_ids(train_limit: int = 200_000):
     train, test = [], []
-    train_limit = 200_000
     with Session(engine) as session:
         q_simple_train = session.query(ClassifierDataset).filter_by(
             level="simple", partition="train").limit(train_limit)

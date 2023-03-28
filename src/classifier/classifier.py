@@ -15,13 +15,13 @@ from .evaluate import evaluate
 
 def train_classifier():
     print("Getting ids")
-    train_ids, test_ids = get_train_test_ids()
+    train_ids, test_ids = get_train_test_ids(train_limit=10_000)
     print("Loading glove data")
     glove_word2idx, glove_idx2word, glove_embs = load_glove_data()
     print("Building vocabulary")
     vocab_word2idx, vocab_idx2word, unk_idx, pad_idx, max_tokens = build_vocabulary(
         train_ids, glove_word2idx, glove_idx2word)
-    print("max_tokens", max_tokens)
+    print(f"Longest entry has {max_tokens} tokens")
     print("Loading datasets")
     train_dataset = WikiArticleDataset(
         train_ids,
@@ -36,7 +36,7 @@ def train_classifier():
         pad_to_size=max_tokens,
     )
     train_dataloader = DataLoader(train_dataset, batch_size=64, shuffle=True)
-    test_dataloader = DataLoader(test_dataset, batch_size=10, shuffle=True)
+    test_dataloader = DataLoader(test_dataset, batch_size=64, shuffle=True)
 
     model_path = "data/classifier_data/model.pt"
 

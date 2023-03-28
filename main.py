@@ -17,8 +17,8 @@ def main():
     # write_dataset()
     # metrics, experiment = analyze_dataset()
     # plot_results(metrics, experiment)
-    # train_classifier()
-    make_classifier_dataset()
+    train_classifier()
+    # make_classifier_dataset()
 
 
 if __name__ == "__main__":

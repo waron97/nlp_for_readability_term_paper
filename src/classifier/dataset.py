@@ -35,7 +35,6 @@ class WikiArticleDataset(Dataset):
         with Session(engine) as session:
             item = session.query(ClassifierDataset).filter_by(id=_id).first()
             text = item.text
-            print(text)
         tok_idx = encode_text(
             text,
             self.word2idx,
