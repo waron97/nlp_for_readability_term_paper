@@ -9,7 +9,9 @@ from sqlalchemy.orm import Session
 from ..util import dump_to_file
 
 
-def _exists(id, model=SimpleWikiEntry):
+def _exists(id, model=SimpleWikiEntry, session: Session = None):
+    if session:
+        return session.query(model).filter_by(id=id).first() is not None
     with Session(engine) as session:
         return session.query(model).filter_by(id=id).first() is not None
 
@@ -88,11 +90,12 @@ def load_full_wikipedia_dataset_sql():
     with Session(engine) as session:
         for page in tqdm(pages):
             id = page.find(id_tag).text
-            title = page.find(title_tag).text
-            text = page.find(text_tag).text
-            text_clean = get_clean_text(text)
-            standard_clean = get_standard_article(title)
-            if not _exists(id, model=WikiArticle):
+
+            if not _exists(id, model=WikiArticle, session=session):
+                title = page.find(title_tag).text
+                text = page.find(text_tag).text
+                text_clean = get_clean_text(text)
+                standard_clean = get_standard_article(title)
                 _save_article(id, title, standard_clean,
                               text_clean, session=session)
-        session.commit()
+                session.commit()
