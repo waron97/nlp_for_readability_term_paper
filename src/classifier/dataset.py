@@ -2,7 +2,7 @@ from typing import Dict, List, Tuple
 from torch.utils.data import Dataset
 
 from sqlalchemy.orm import Session
-from src.sql.models import WikiArticle
+from src.sql.models import ClassifierDataset
 from src.sql import engine
 from .preprocess import encode_text
 
@@ -33,11 +33,9 @@ class WikiArticleDataset(Dataset):
     def __getitem__(self, index) -> Tuple[str, str]:
         _id, level = self._ids[index]
         with Session(engine) as session:
-            item = session.query(WikiArticle).filter_by(id=_id).first()
-            if level == "standard":
-                text = item.standard_text
-            else:
-                text = item.simple_text
+            item = session.query(ClassifierDataset).filter_by(id=_id).first()
+            text = item.text
+            print(text)
         tok_idx = encode_text(
             text,
             self.word2idx,

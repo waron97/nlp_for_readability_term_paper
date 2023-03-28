@@ -21,19 +21,19 @@ def train_classifier():
     print("Building vocabulary")
     vocab_word2idx, vocab_idx2word, unk_idx, pad_idx, max_tokens = build_vocabulary(
         train_ids, glove_word2idx, glove_idx2word)
-
+    print("max_tokens", max_tokens)
     print("Loading datasets")
     train_dataset = WikiArticleDataset(
         train_ids,
         vocab_word2idx,
         unk_idx, pad_idx,
-        pad_to_size=2000,
+        pad_to_size=max_tokens,
     )
     test_dataset = WikiArticleDataset(
         test_ids,
         vocab_word2idx,
         unk_idx, pad_idx,
-        pad_to_size=2000,
+        pad_to_size=max_tokens,
     )
     train_dataloader = DataLoader(train_dataset, batch_size=64, shuffle=True)
     test_dataloader = DataLoader(test_dataset, batch_size=10, shuffle=True)

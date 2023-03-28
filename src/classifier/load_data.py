@@ -1,6 +1,6 @@
 from typing import Dict, List
 from sqlalchemy.orm import Session
-from src.sql.models import WikiArticle
+from src.sql.models import ClassifierDataset
 from src.sql import engine
 import numpy as np
 
@@ -24,15 +24,24 @@ def load_glove_data():
     return word2idx, idx2word, np.array(embs)
 
 
-def get_train_test_ids(test_portion_size: float = 0.1):
+def get_train_test_ids():
+    train, test = [], []
+    train_limit = 200_000
     with Session(engine) as session:
-        _ids = []
-        items = session.query(WikiArticle.id).limit(999999).all()
-        for item in items:
-            _id = item[0]
-            _ids.append((_id, "standard"))
-            _ids.append((_id, "simple"))
-    train_size = 1 - test_portion_size
-    train = _ids[:int(len(_ids) * train_size)]
-    test = _ids[int(len(_ids) * train_size):]
+        q_simple_train = session.query(ClassifierDataset).filter_by(
+            level="simple", partition="train").limit(train_limit)
+        q_standard_train = session.query(ClassifierDataset).filter_by(
+            level="standard", partition="train").limit(train_limit)
+        q_simple_test = session.query(ClassifierDataset).filter_by(
+            level="simple", partition="test")
+        q_standard_test = session.query(ClassifierDataset).filter_by(
+            level="standard", partition="test")
+        for item in q_simple_train:
+            train.append((item.id, "simple"))
+        for item in q_standard_train:
+            train.append((item.id, "standard"))
+        for item in q_simple_test:
+            test.append((item.id, "simple"))
+        for item in q_standard_test:
+            test.append((item.id, "standard"))
     return train, test

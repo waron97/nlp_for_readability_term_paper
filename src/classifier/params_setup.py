@@ -8,7 +8,7 @@ import torch
 from .util import random_vector
 from .device import device
 from sqlalchemy.orm import Session
-from src.sql.models import WikiArticle
+from src.sql.models import ClassifierDataset
 from src.sql import engine
 from .preprocess import clean_str
 from nltk.tokenize import word_tokenize
@@ -33,8 +33,8 @@ def build_vocabulary(train_ids: List[Tuple[int, str]], glove_word2idx: Dict[str,
     max_tokens = 0
     with Session(engine) as session:
         for _id, level in tqdm(train_ids):
-            doc = session.query(WikiArticle).filter_by(id=_id).first()
-            text = doc.simple_text if level == "simple" else doc.standard_text
+            doc = session.query(ClassifierDataset).filter_by(id=_id).first()
+            text = doc.text
             text = clean_str(text)
             tokens = word_tokenize(text)
             for token in tokens:

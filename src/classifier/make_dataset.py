@@ -8,40 +8,50 @@ from sqlalchemy.orm.session import Session
 
 def _get_paragraphs(text: str):
     paragraphs = text.split("\n\n")
-    paragraphs = [paragraph.strip()
-                  for paragraph in paragraphs if len(paragraph) > 0 and "*" not in paragraph]
+    paragraphs = [
+        paragraph.strip() for paragraph in paragraphs
+        if len(paragraph.split()) > 20
+        and len(paragraph.split()) < 2000
+        and "*" not in paragraph
+        and "<" not in paragraph
+        and ">" not in paragraph
+        and "==" not in paragraph
+        and "{" not in paragraph
+        and "colspan=" not in paragraph
+        and "style=" not in paragraph
+    ]
     return paragraphs
 
 
 def make_classifier_dataset():
     with Session(engine) as session:
-        #     len_objects = session.query(ClassifierDataset).count()
-        #     q = session.query(WikiArticle)
-        #     for article in tqdm(q, total=len_objects):
-        #         paragraphs_simple = _get_paragraphs(article.simple_text)
-        #         paragraphs_standard = _get_paragraphs(article.standard_text)
-        #         for p in paragraphs_simple:
-        #             session.add(ClassifierDataset(
-        #                 partition="train",
-        #                 level="simple",
-        #                 text=p,
-        #             ))
-        #         for p in paragraphs_standard:
-        #             session.add(ClassifierDataset(
-        #                 partition="train",
-        #                 level="standard",
-        #                 text=p,
-        #             ))
-        #     session.commit()
-
-        _ids = session.query(ClassifierDataset.id).all()
-
-        for _id in _ids:
-            _id = _id[0]
-            session.query(ClassifierDataset).filter(
-                ClassifierDataset.id == _id).update({"partition": "train"})
-
+        len_objects = session.query(ClassifierDataset).count()
+        q = session.query(WikiArticle)
+        for article in tqdm(q, total=len_objects):
+            paragraphs_simple = _get_paragraphs(article.simple_text)
+            paragraphs_standard = _get_paragraphs(article.standard_text)
+            for p in paragraphs_simple:
+                session.add(ClassifierDataset(
+                    partition="train",
+                    level="simple",
+                    text=p,
+                ))
+            for p in paragraphs_standard:
+                session.add(ClassifierDataset(
+                    partition="train",
+                    level="standard",
+                    text=p,
+                ))
         session.commit()
+
+        # _ids = session.query(ClassifierDataset.id).all()
+
+        # for _id in _ids:
+        #     _id = _id[0]
+        #     session.query(ClassifierDataset).filter(
+        #         ClassifierDataset.id == _id).update({"partition": "train"})
+
+        # session.commit()
 
         len_test = 20_000
 
