@@ -38,7 +38,7 @@ class Classifier(nn.Module):
     def _load_embedding_weight(self):
         weight = get_embedding_weights(self.glove_embs, self.idx2word)
         self.embedding.load_state_dict({"weight": weight})
-        self.embedding.weight.requires_grad = True
+        self.embedding.weight.requires_grad = False
 
     def forward(self, document_batch: torch.Tensor):
         document_batch = self.embedding(document_batch)
