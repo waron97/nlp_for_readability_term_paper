@@ -14,30 +14,33 @@ from .evaluate import evaluate
 
 
 def train_classifier():
+    print("Getting ids")
     train_ids, test_ids = get_train_test_ids()
+    print("Loading glove data")
     glove_word2idx, glove_idx2word, glove_embs = load_glove_data()
+    print("Building vocabulary")
     vocab_word2idx, vocab_idx2word, unk_idx, pad_idx, max_tokens = build_vocabulary(
         train_ids, glove_word2idx, glove_idx2word)
 
+    print("Loading datasets")
     train_dataset = WikiArticleDataset(
         train_ids,
         vocab_word2idx,
         unk_idx, pad_idx,
-        pad_to_size=max_tokens,
-        sent_limit=5
+        pad_to_size=2000,
     )
     test_dataset = WikiArticleDataset(
         test_ids,
         vocab_word2idx,
         unk_idx, pad_idx,
-        pad_to_size=max_tokens,
-        sent_limit=1
+        pad_to_size=10000,
     )
     train_dataloader = DataLoader(train_dataset, batch_size=64, shuffle=True)
     test_dataloader = DataLoader(test_dataset, batch_size=10, shuffle=True)
 
     model_path = "data/classifier_data/model.pt"
 
+    print("Loading model")
     if os.path.exists(model_path):
         model = Classifier(
             glove_embs=glove_embs,
@@ -45,7 +48,9 @@ def train_classifier():
             idx2word=vocab_idx2word,
             load_emb_weight=False
         )
+        print("Loading model weights")
         model.load_state_dict(torch.load(model_path))
+        print("Model loaded, moving to device")
         model.to(device)
 
     else:
@@ -58,7 +63,8 @@ def train_classifier():
         model.to(device)
         optimizer = Adam(model.parameters(), lr=0.001)
         criterion = nn.NLLLoss()
-        train(model, train_dataloader, optimizer, criterion, epochs=10)
+        train(model, train_dataloader, optimizer, criterion, epochs=5)
         torch.save(model.state_dict(), model_path)
 
+    print("Evaluating model")
     evaluate(model, test_dataloader)

@@ -41,19 +41,19 @@ def build_vocabulary(train_ids: List[Tuple[int, str]], glove_word2idx: Dict[str,
                 voc.add(token)
             max_tokens = max(max_tokens, len(tokens))
 
-    unprocessed = []
-    for word in voc:
-        glove_idx = glove_word2idx.get(word)
-        if glove_idx is None:
-            unprocessed.append(word)
+    # unprocessed = []
+    # for word in voc:
+    #     glove_idx = glove_word2idx.get(word)
+    #     if glove_idx is None:
+    #         unprocessed.append(word)
 
-    i = len(word2idx)
-    for word in unprocessed:
-        while idx2word.get(i) is not None:
-            i += 1
-        word2idx[word] = i
-        idx2word[i] = word
-        i += 1
+    # i = len(word2idx)
+    # for word in unprocessed:
+    #     while idx2word.get(i) is not None:
+    #         i += 1
+    #     word2idx[word] = i
+    #     idx2word[i] = word
+    #     i += 1
 
     unk_idx = len(word2idx)
     while idx2word.get(unk_idx) is not None:

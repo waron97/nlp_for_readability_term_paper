@@ -1,12 +1,13 @@
 from sklearn.metrics import precision_recall_fscore_support
 from torch.utils.data import DataLoader
 from .model import Classifier
+from tqdm import tqdm
 
 
 def evaluate(model: Classifier, test_dataloader: DataLoader):
     y_true = []
     y_pred = []
-    for document_batch, level_batch in test_dataloader:
+    for document_batch, level_batch in tqdm(test_dataloader):
         out = model(document_batch)
         y_true.extend(level_batch.reshape(-1).tolist())
         out = out.argmax(dim=1).reshape(-1).tolist()

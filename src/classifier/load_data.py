@@ -27,7 +27,7 @@ def load_glove_data():
 def get_train_test_ids(test_portion_size: float = 0.1):
     with Session(engine) as session:
         _ids = []
-        items = session.query(WikiArticle.id).limit(10_000).all()
+        items = session.query(WikiArticle.id).limit(999999).all()
         for item in items:
             _id = item[0]
             _ids.append((_id, "standard"))
