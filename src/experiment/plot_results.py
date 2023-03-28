@@ -52,6 +52,29 @@ def _make_topic_metric_plot(metric: str, topic: str, experiment: Experiment, sho
     plt.cla()
 
 
+def _plot_levels(metrics: List[Metric], experiment: Experiment):
+    def _name(string):
+        if len(string) > 10:
+            return string[:10] + "..."
+        return string
+
+    for metric in metrics:
+        for level in LEVELS:
+            values = experiment.results.filter(
+                metrics=[metric.name], levels=[level]).all()
+            tups = [(value["topic"], value["value"]) for value in values]
+            tups.sort(key=lambda tup: tup[1])
+            x = list(range(len(tups)))
+            height = [tup[1] for tup in tups]
+            labels = [_name(tup[0]) for tup in tups]
+            plt.bar(x, height, tick_label=labels, width=0.6,)
+            plt.xticks(rotation=60)
+            plt.gcf().subplots_adjust(bottom=0.3)
+            fname = f"plot_{metric.abbreviation}_{level}.png"
+            plt.savefig(f"data/analysis/levels/{fname}")
+            plt.cla()
+
+
 def _make_plot(metric: str, experiment: Experiment, short_name: str = "", sort_revert: bool = False):
     a1 = experiment.results.filter(
         metrics=[metric], levels=["A1"]).mean(metric)
@@ -94,14 +117,15 @@ def _make_plot(metric: str, experiment: Experiment, short_name: str = "", sort_r
 
 
 def plot_results(metrics: List[Metric], experiment: Experiment):
-    # for metric in metrics:
-    #     for topic in TOPICS:
-    #         _make_topic_metric_plot(
-    #             metric.name, topic, experiment, short_name=metric.abbreviation)
-    _make_plot("Words in Top 3000", experiment,
-               short_name="WIT", sort_revert=True)
+    _plot_levels(metrics, experiment)
+    for metric in metrics:
+        for topic in TOPICS:
+            _make_topic_metric_plot(
+                metric.name, topic, experiment, short_name=metric.abbreviation)
+    # _make_plot("Words in Top 3000", experiment,
+    #            short_name="WIT", sort_revert=True)
 
     # for metric in metrics:
     #     _make_plot(metric.name, experiment, short_name=metric.abbreviation)
 
-    _make_table(metrics, experiment)
+    # _make_table(metrics, experiment)

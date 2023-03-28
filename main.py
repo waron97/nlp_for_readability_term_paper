@@ -15,9 +15,9 @@ def main():
     # load_simple_wiki_sql()
     # make_dataset()
     # write_dataset()
-    # metrics, experiment = analyze_dataset()
-    # plot_results(metrics, experiment)
-    train_classifier()
+    metrics, experiment = analyze_dataset()
+    plot_results(metrics, experiment)
+    # train_classifier()
     # make_classifier_dataset()
 
 
