@@ -33,7 +33,7 @@ def train_classifier():
         test_ids,
         vocab_word2idx,
         unk_idx, pad_idx,
-        pad_to_size=10000,
+        pad_to_size=2000,
     )
     train_dataloader = DataLoader(train_dataset, batch_size=64, shuffle=True)
     test_dataloader = DataLoader(test_dataset, batch_size=10, shuffle=True)

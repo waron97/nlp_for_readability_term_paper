@@ -5,6 +5,7 @@ from src.make_dataset import make_dataset, write_dataset
 from src.experiment import analyze_dataset, plot_results
 
 from src.classifier.classifier import train_classifier
+from src.classifier.make_dataset import make_classifier_dataset
 
 load_dotenv()
 
@@ -16,7 +17,8 @@ def main():
     # write_dataset()
     # metrics, experiment = analyze_dataset()
     # plot_results(metrics, experiment)
-    train_classifier()
+    # train_classifier()
+    make_classifier_dataset()
 
 
 if __name__ == "__main__":

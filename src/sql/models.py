@@ -46,6 +46,15 @@ class ClearCorpusEntry(Base):
     cml2ri: Mapped[Optional[float]]
 
 
+class ClassifierDataset(Base):
+    __tablename__ = "classifier_dataset"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    partition: Mapped[str]
+    text: Mapped[str]
+    level: Mapped[str]
+
+
 class WikiArticle(Base):
     __tablename__ = "wiki_article"
 
