@@ -13,6 +13,9 @@ from src.sql import engine
 from .preprocess import clean_str
 from nltk.tokenize import word_tokenize
 
+PAD_TOKEN = "<PAD>"
+UNK_TOKEN = "<UNK>"
+
 
 def build_vocabulary(train_ids: List[Tuple[int, str]], glove_word2idx: Dict[str, int],  glove_idx2word: Dict[int, str]):
     pickle_path = "data/classifier_data/vocabulary.pkl"
@@ -58,14 +61,14 @@ def build_vocabulary(train_ids: List[Tuple[int, str]], glove_word2idx: Dict[str,
     unk_idx = len(word2idx)
     while idx2word.get(unk_idx) is not None:
         unk_idx += 1
-    unk = "<UNK>"
+    unk = UNK_TOKEN
     word2idx[unk] = unk_idx
     idx2word[unk_idx] = unk
 
     pad_idx = len(word2idx)
     while idx2word.get(pad_idx) is not None:
         pad_idx += 1
-    pad = "<PAD>"
+    pad = PAD_TOKEN
     word2idx[pad] = pad_idx
     idx2word[pad_idx] = pad
 
@@ -83,7 +86,8 @@ def build_vocabulary(train_ids: List[Tuple[int, str]], glove_word2idx: Dict[str,
     return word2idx, idx2word, unk_idx, pad_idx, max_tokens
 
 
-def get_embedding_weights(embs: np.ndarray, idx2word: Dict[int, str]):
+def get_embedding_weights(embs: np.ndarray, idx2word: Dict[int, str], word2idx: Dict[str, int]):
+    pad_idx = word2idx[PAD_TOKEN]
     embedding_dim = 50
     vocab_size = len(idx2word)
     weight_matrix = torch.zeros((vocab_size, embedding_dim))
@@ -91,6 +95,9 @@ def get_embedding_weights(embs: np.ndarray, idx2word: Dict[int, str]):
         if idx < len(embs):
             weight_matrix[idx] = torch.tensor(
                 embs[idx], device=device, dtype=torch.float32)
+        elif idx == pad_idx:
+            weight_matrix[idx] = torch.zeros(
+                embedding_dim, device=device, dtype=torch.float32)
         else:
             weight_matrix[idx] = random_vector(embedding_dim)
     return weight_matrix

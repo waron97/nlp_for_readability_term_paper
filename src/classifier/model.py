@@ -36,9 +36,10 @@ class Classifier(nn.Module):
         self.softmax = nn.LogSoftmax(dim=1)
 
     def _load_embedding_weight(self):
-        weight = get_embedding_weights(self.glove_embs, self.idx2word)
+        weight = get_embedding_weights(
+            self.glove_embs, self.idx2word, self.word2idx)
         self.embedding.load_state_dict({"weight": weight})
-        self.embedding.weight.requires_grad = False
+        self.embedding.weight.requires_grad = True
 
     def forward(self, document_batch: torch.Tensor):
         document_batch = self.embedding(document_batch)

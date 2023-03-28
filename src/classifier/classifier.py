@@ -15,7 +15,7 @@ from .evaluate import evaluate
 
 def train_classifier():
     print("Getting ids")
-    train_ids, test_ids = get_train_test_ids(train_limit=140_000)
+    train_ids, test_ids = get_train_test_ids(train_limit=1000)
     print("Loading glove data")
     glove_word2idx, glove_idx2word, glove_embs = load_glove_data()
     print("Building vocabulary")
@@ -63,7 +63,8 @@ def train_classifier():
         model.to(device)
         optimizer = Adam(model.parameters(), lr=0.005)
         criterion = nn.NLLLoss()
-        train(model, train_dataloader, optimizer, criterion, epochs=5)
+        train(model, train_dataloader, optimizer,
+              criterion, epochs=5, pad_idx=pad_idx)
         torch.save(model.state_dict(), model_path)
 
     print("Evaluating model")
