@@ -4,16 +4,19 @@ from dotenv import load_dotenv
 from src.make_dataset import make_dataset, write_dataset
 from src.experiment import analyze_dataset, plot_results
 
+from src.classifier.classifier import train_classifier
+
 load_dotenv()
 
 
 def main():
-    load_full_wikipedia_dataset_sql()
+    # load_full_wikipedia_dataset_sql()
     # load_simple_wiki_sql()
     # make_dataset()
     # write_dataset()
-    metrics, experiment = analyze_dataset()
-    plot_results(metrics, experiment)
+    # metrics, experiment = analyze_dataset()
+    # plot_results(metrics, experiment)
+    train_classifier()
 
 
 if __name__ == "__main__":
