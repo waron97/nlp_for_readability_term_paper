@@ -27,7 +27,7 @@ class Classifier(nn.Module):
         self.lstm = nn.LSTM(
             input_size=self.emb_size,
             hidden_size=hidden_size,
-            num_layers=3,
+            num_layers=1,
             batch_first=True,
         )
 

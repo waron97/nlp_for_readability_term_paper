@@ -24,7 +24,7 @@ def load_glove_data():
     return word2idx, idx2word, np.array(embs)
 
 
-def get_train_test_ids(train_limit: int = 200_000):
+def get_train_test_ids(train_limit: int = 200_000, test_limit: int = 20_000):
     train, test = [], []
     with Session(engine) as session:
         q_simple_train = session.query(ClassifierDataset).filter_by(
@@ -32,9 +32,9 @@ def get_train_test_ids(train_limit: int = 200_000):
         q_standard_train = session.query(ClassifierDataset).filter_by(
             level="standard", partition="train").limit(train_limit)
         q_simple_test = session.query(ClassifierDataset).filter_by(
-            level="simple", partition="test")
+            level="simple", partition="test").limit(test_limit)
         q_standard_test = session.query(ClassifierDataset).filter_by(
-            level="standard", partition="test")
+            level="standard", partition="test").limit(test_limit)
         for item in q_simple_train:
             train.append((item.id, "simple"))
         for item in q_standard_train:

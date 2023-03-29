@@ -15,7 +15,8 @@ from .evaluate import evaluate
 
 def train_classifier():
     print("Getting ids")
-    train_ids, test_ids = get_train_test_ids(train_limit=1000)
+    train_ids, test_ids = get_train_test_ids(
+        train_limit=50_000, test_limit=100)
     print("Loading glove data")
     glove_word2idx, glove_idx2word, glove_embs = load_glove_data()
     print("Building vocabulary")
