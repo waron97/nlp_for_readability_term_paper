@@ -6,3 +6,4 @@ data
 *.pyo
 __pycache__
 checkpoints
+distrib/*.csv
