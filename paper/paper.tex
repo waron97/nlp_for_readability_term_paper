@@ -24,7 +24,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-    This paper examines readability-related metrics of AI-generated text, specifically texts produced by OpenAI's GPT-3. Generation was performed for the English language across 10 topics and the 6 proficiency levels defined by the CEFR framework, and outputs were compared with Simple Wikipedia and (standard) Wikipedia articles on the same topics. 7 commonly used complexity metrics have been employed, targeting chiefly lexis and syntax. In the limited scope of this experiment, GPT-3 is observed to at least partially aware of what constitutes reading difficulty.
+    This paper examines readability-related metrics of AI-generated text, specifically texts produced by OpenAI's GPT-3. Generation was performed for the English language across 10 topics and the 6 proficiency levels defined by the CEFR framework, and outputs were compared with Simple Wikipedia and (standard) Wikipedia articles on the same topics. 7 commonly used complexity metrics have been employed, targeting chiefly lexis and syntax. In the limited scope of this experiment, GPT-3 is observed to be at least partially aware of what constitutes reading difficulty.
 \end{abstract}
 
 \section{Introduction}
@@ -59,7 +59,7 @@ Table~\ref{tab:metrics} lists the readability metrics used in this experiment. T
 
 This feature set almost exclusively targets lexis and syntax, with little regard for morphology outside of the noun-to-verb ratio feature. While this is a limitation of this set, the language of this experiment is solely English, a language not necessarily known for a complex morphological system.
 
-The feautre "Words in Top 3000 English words" uses unigram frequencies from the Google Web Trillion Word corpus\footnote{\url{https://ai.googleblog.com/2006/08/all-our-n-gram-are-belong-to-you.html}} to isolate the 3000 most frequent words of the English language. Many research approaches to readability employ similar ideas to gain insight into the lexical complexity of texts, such as the BIV (basic Italian vocabulary) employed by \citep{dellorletta-etal-2011-read}.
+The feature "Words in Top 3000 English words" uses unigram frequencies from the Google Web Trillion Word corpus\footnote{\url{https://ai.googleblog.com/2006/08/all-our-n-gram-are-belong-to-you.html}} to isolate the 3000 most frequent words of the English language. Many research approaches to readability employ similar ideas to gain insight into the lexical complexity of texts, such as the BIV (basic Italian vocabulary) employed by \citep{dellorletta-etal-2011-read}.
 
 All feature values outside of type-token-ratio (which ignores sentence boundaries) are computed at the sentence level. When a dataset entry comprises multiple sentences, the output for that entry is the average of the values for the sentences that compose it. 
 
@@ -81,7 +81,7 @@ Among the selected measures, WIT (ratio of words in the 3000 most frequent Engli
 
 LLDL (length of longest dependency link) is another metric that performs well in terms of level differentiation. It also reflects the common belief that the biggest difficulty spike in language learning - as shown by Figure~\ref{fig:lldl-mean}. As with most metrics, however, the natural progression of the CEFR levels is lost, particularly in the middle portions.
 
-Interesting discussions can be had around topics as well, since, depending on GPT-3's ability to generalize across domains, certain areas might be problem areas for it. For example, "semantics" and "quantum mechanics" would be hard to write about for A1 level students as they are likely to be children who have not interacted with those fields yet.
+Interesting discussions can be had around topics as well, since, depending on GPT-3's ability to generalize across domains, certain areas might constitute problem for it. For example, "semantics" and "quantum mechanics" would be hard to write about for A1 level students as they are likely to be children who have not interacted with those fields yet.
 
 Generally, a difference in values is visible across the board, more so at the lower difficuly levels. At CEFR levels B2 and above, many of the metrics appear similar regardless of topic. Among the selected measures, NVR (noun to verb ratio) shows the highest cross-topic variation, maintaining strong differentitation even at the C2-level texts. Figure \ref{fig:wit-nvr-topics} shows metric values at the A1 and C2 levels, which indicate that topics commonly regarded as intrinsically have higher information density in GPT-3 texts. This is however a weak case, as few metrics differ so sharply as NVR, and bars in these figures correspond to a single text entry.
 
@@ -89,7 +89,7 @@ Generally, a difference in values is visible across the board, more so at the lo
 
 \section{Discussion and future research}
 
-This work attempted to gauge true readability levels of GPT-3 output texts with prompts across 10 topics and CEFR proficiency levels, optimising thus for the second language learning application environment. Outputs computed from the metrics set suggest that GPT-3 is at least somewhat aware of syntax and lexis when performin generation for a target readability level.
+This work attempted to gauge true readability levels of GPT-3 output texts with prompts across 10 topics and CEFR proficiency levels, optimising for the second language learning application environment. Outputs computed from the metric set suggest that GPT-3 is at least somewhat aware of syntax and lexis when performin generation for a target readability level.
 
 Future research into this topic could explore a wider variety of textual metrics, as this work only selected a handful that lent themselves particularly well to interpretation and did not require steep hardware requirements to obtain. 
 
